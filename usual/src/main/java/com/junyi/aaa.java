@@ -2,10 +2,12 @@ package com.junyi;
 
 
 
+import javafx.util.Pair;
 import org.springframework.beans.BeanUtils;
 
 import java.io.*;
-import java.util.UUID;
+import java.util.*;
+import java.util.stream.Stream;
 
 /**
  * User: JY
@@ -17,13 +19,9 @@ import java.util.UUID;
 
 public class aaa {
     public static void main(String[] args) {
-        String id1 = UUID.randomUUID().toString().replace("-", "").toLowerCase();
-        String id2 = UUID.randomUUID().toString().replace("-", "").toLowerCase();
-        System.out.println(id1);
-        System.out.println(id2);
-        BeanUtils.copyProperties();
-
-
+        Pair<String, String> pair = new Pair<>();
+        Stream<Integer> integerStream = Stream.of(1, 2);
+        integerStream.an
     }
 
 }
