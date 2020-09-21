@@ -1,5 +1,7 @@
 ### Set
 
+通过add()结果来判断是否存在元素
+
 ```java
 // Complicated
 List<Person> source = new ArrayList<>();
@@ -78,6 +80,8 @@ Integer thisValue = Optional.ofNullable(value)
 
 
 ### 多层次对象判空
+
+使用Optional
 
 ```java
 
