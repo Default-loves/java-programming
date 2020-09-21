@@ -128,3 +128,10 @@ for (Account account : accountList) {
 roleTotalMap = accountList.stream().collect(Collectors.groupingBy(Account::getRoleId, Collectors.summingDouble(Account::getBalance)));
 ```
 
+### 生成序列
+
+```java
+int[] array1 = IntStream.rangeClosed(1, N).toArray();
+int[] array2 = IntStream.iterate(1, n -> n * 2).limit(N).toArray();
+```
+
