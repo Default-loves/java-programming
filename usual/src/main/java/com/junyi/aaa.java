@@ -19,9 +19,6 @@ import java.util.stream.Stream;
 
 public class aaa {
     public static void main(String[] args) {
-        Pair<String, String> pair = new Pair<>();
-        Stream<Integer> integerStream = Stream.of(1, 2);
-        integerStream.an
     }
 
 }
