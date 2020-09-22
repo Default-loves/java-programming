@@ -2,7 +2,6 @@ package com.junyi.basis;
 
 import org.apache.commons.beanutils.BeanUtils;
 
-import java.awt.print.Book;
 import java.util.Optional;
 
 /**
@@ -52,15 +51,4 @@ public class OptionalDemo {
     }
 
 
-    private static class Book {
-        private String name;
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-    }
 }
