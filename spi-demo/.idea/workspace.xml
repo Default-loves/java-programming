@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3155092f-dbbe-4c53-ba94-b16c7a8b59ee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/java-beans-demo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/out/production/java-beans-demo/com/junyi/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/out/production/java-beans-demo/com/junyi/ioc/java/beans/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/src/com/junyi/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/src/com/junyi/ioc/java/beans/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/VisualBroadcast.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/Bed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/City.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/Hospital.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/MoveTarget.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/MyPanel$MyTimerTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/MyPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/Person$State.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/PersonPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/Virus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/Bed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/City.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/Hospital.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/MoveTarget.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/MyPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/PersonPool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/Point.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/Virus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child1/target/classes/META-INF/child1.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/child2/child2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/main/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child2/src/main/java/com/junyi/child2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/junyi/main/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child2/target/classes/META-INF/child2.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/child2/target/classes/com/junyi/child2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="F:\IDE\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="165" />
+    <option name="y" value="85" />
+    <option name="width" value="1620" />
+    <option name="height" value="880" />
+  </component>
+  <component name="ProjectId" id="1htRjW3eqjufBWaxgajuwtyJGCZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588991231966" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/main/src/main/java/com/junyi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.junyi.main.Application" />
+      <module name="main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.junyi.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Example01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.junyi.child2.Example01" />
+      <module name="main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.junyi.child2.Main" />
+      <module name="main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.junyi.child2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Example01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3155092f-dbbe-4c53-ba94-b16c7a8b59ee" name="Default Changelist" comment="" />
+      <created>1588777982089</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588777982089</updated>
+      <workItem from="1588777984921" duration="2745000" />
+      <workItem from="1588990190039" duration="962000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3707000" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="125" key="GridCell.Tab.0.bottom" timestamp="1600828913726">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="125" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600828913726" />
+    <state width="1877" height="125" key="GridCell.Tab.0.center" timestamp="1600828913726">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="125" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600828913726" />
+    <state width="1877" height="125" key="GridCell.Tab.0.left" timestamp="1600828913726">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="125" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600828913726" />
+    <state width="1877" height="125" key="GridCell.Tab.0.right" timestamp="1600828913726">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="125" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600828913726" />
+    <state x="759" y="297" key="chooseDestDirectoryDialog" timestamp="1600828739765">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="759" y="297" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600828739765" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.12.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

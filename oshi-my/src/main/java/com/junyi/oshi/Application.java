@@ -9,7 +9,8 @@ import oshi.hardware.HardwareAbstractionLayer;
  * @time: 2020/9/18 9:35
  * @version: 1.0
  * @author: junyi Xu
- * @description:
+ * @description: oshi 开源项目，能够查看系统、内存、硬盘等信息
+ * https://github.com/oshi/oshi
  */
 public class Application {
 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/child1/child1.iml" filepath="$PROJECT_DIR$/child1/child1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main/main.iml" filepath="$PROJECT_DIR$/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spi-demo.iml" filepath="$PROJECT_DIR$/spi-demo.iml" />
+    </modules>
+  </component>
+</project>
