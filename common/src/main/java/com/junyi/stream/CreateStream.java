@@ -27,16 +27,17 @@ public class CreateStream {
         stream1.forEach(System.out::println);
         stream2.forEach(System.out::println);
 
-        //3
+        /** 3. custom generate method */
         Stream<Integer> natual = Stream.generate(new NatualSupplier());
         // 注意：无限序列必须先变成有限序列再打印:
         natual.limit(20).forEach(System.out::println);
 
-        //4
+        /** 4. Files.lines */
         try (Stream<String> lines = Files.lines(Paths.get("/path/to/file.txt"))) {
             //...
         }
 
+        /** 5. from Regex Pattern */
         Pattern p = Pattern.compile("\\s+");
         Stream<String> s = p.splitAsStream("The quick brown fox jumps over the lazy dog");
         s.forEach(System.out::println);

@@ -3,7 +3,7 @@ package com.junyi.basis;
 /**
  * User: JY
  * Date: 2020/7/18 0018
- * Description:
+ * Description: Class information
  */
 public class ClassDemo {
     public static void main(String[] args) {

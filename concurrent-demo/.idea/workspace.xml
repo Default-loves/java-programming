@@ -5,9 +5,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b770956d-78af-40be-b179-5f0a1bae3a05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/.idea/smartfox_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/proxy/CglibDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/proxy/DynamicProxyDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/smartfox_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/BitMap_my.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/BitMap_my.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/BitSet_my.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/BitSet_my.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/LinkedHashMapMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/LinkedHashMapMy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/aaa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/aaa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/ClassDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/ClassDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/DynamicProxyDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/EnumMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/EnumMy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/IntrospectorMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/IntrospectorMy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/JSONMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/JSONMy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/ListUtilsMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/ListUtilsMy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/OptionalDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/OptionalDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/StringMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/StringJoinMy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/getDataFromComplexJson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/net/DataGrameSocketClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/net/DataGrameSocketClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/net/DataGrameSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/net/DataGrameSocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/stream/Collect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/stream/Collect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/stream/CreateStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/stream/CreateStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/stream/List2Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/stream/List2Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/BitMap_my.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/BitSet_my.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/JDBCDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/LinkedHashMapMy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/Long2Some.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/Solution$ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/StackMy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/String2Some.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/TypeConvert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/aaa.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/aaa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/AnnotationHandle$Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/AnnotationHandle$Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/AnnotationHandle$Range.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/AnnotationHandle$Range.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/AnnotationHandle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/AnnotationHandle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/ClassDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/ClassDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/DynamicProxyDemo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/DynamicProxyDemo$Hello.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/DynamicProxyDemo$Hello.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/DynamicProxyDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/DynamicProxyDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/EnumMy$Weekday.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/EnumMy$Weekday.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/EnumMy.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/EnumMy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/IntrospectorMy$Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/IntrospectorMy.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/IntrospectorMy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/JSONMy.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/JSONMy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/ListUtilsMy.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/ListUtilsMy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/OptionalDemo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/OptionalDemo$Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/OptionalDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/OptionalDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/Print.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/ReadFromCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/ReadFromCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/ReadWriteText.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/ReadWriteText.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/SomethingStrange.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/SomethingStrange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/StringMy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/net/DataGrameSocketClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/net/DataGrameSocketClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/net/DataGrameSocketServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/net/DataGrameSocketServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/net/SocketClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/net/SocketClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/net/SocketServer$Handler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/net/SocketServer$Handler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/net/SocketServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/net/SocketServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/usual.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../common/usual.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stream/stream.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +97,6 @@
         <option name="mavenHome" value="F:\IDE\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="165" />
-    <option name="y" value="85" />
-    <option name="width" value="1620" />
-    <option name="height" value="880" />
   </component>
   <component name="ProjectId" id="1hqbtjZHeNt3djm9poB4YuvA9zI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">

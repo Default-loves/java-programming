@@ -14,15 +14,15 @@ public class Collect {
     public static void main(String[] args) {
         //输出为List
         Stream<String> stream = Stream.of("Apple", "", null, "Pear", "  ", "Orange");
-        List<String> list = stream.filter(s -> s != null && !s.isBlank()).collect(Collectors.toList());
-        System.out.println(list);
+        List<String> list1 = stream.filter(s -> s != null && !s.isBlank()).collect(Collectors.toList());
+        System.out.println(list1);
 
         //输出为Array
-        List<String> list = List.of("Apple", "Banana", "Orange");
-        String[] array = list.stream().toArray(String[]::new);
+        List<String> list2 = List.of("Apple", "Banana", "Orange");
+        String[] array = list2.stream().toArray(String[]::new);
 
         //输出为Map
-        Stream<String> stream = Stream.of("APPL:Apple", "MSFT:Microsoft");
+        stream = Stream.of("APPL:Apple", "MSFT:Microsoft");
         Map<String, String> map = stream
                 .collect(Collectors.toMap(
                         // 把元素s映射为key:

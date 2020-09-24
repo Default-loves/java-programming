@@ -3,7 +3,7 @@ package com.junyi.basis;
 /**
  * User: JY
  * Date: 2020/7/18 0018
- * Description:
+ * Description: Enum Demo
  */
 public class EnumMy {
     public static void main(String[] args) {
@@ -14,7 +14,9 @@ public class EnumMy {
             System.out.println("Today is " + day + ". Work at office!");
         }
     }
-    private enum Weekday {
+
+
+    enum Weekday {
         MON(1, "星期一"),
         TUE(2, "星期二"),
         WED(3, "星期三"),

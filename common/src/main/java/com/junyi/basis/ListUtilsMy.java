@@ -1,9 +1,8 @@
 package com.junyi.basis;
 
-import com.junyi.Person;
 import org.apache.commons.collections4.ListUtils;
 
-import java.util.*;
+import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
