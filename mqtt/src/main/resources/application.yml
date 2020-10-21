@@ -1,15 +1,20 @@
 server:
   port: 12345
 
-mqtt:
-  host: tcp://127.0.0.1:1883
-  clientinid: mqttinId
-  clientoutid: mqttoutid
-  topic: +/apple
-  qoslevel: 1
-  #MQTT 认证
-  username: jy
-  password: 123456
-  timeout: 10000
-  #20s
-  keepalive: 20
+drzk:
+  mqtt:
+    host: tcp://127.0.0.1:1883
+    qos: 0
+    #MQTT 认证
+    userName: admin
+    password: public
+    connectionTimeout: 20   # 20 second
+    keepAliveInterval: 20
+    publishTopic: jy
+    subscribeTopic:
+      - book/update
+      - +/apple
+
+spring:
+  profiles:
+    active: dev
