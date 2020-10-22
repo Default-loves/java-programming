@@ -25,69 +25,37 @@ public class MqttConfigDO {
     private List<String> subscribeTopic;
     private String publishTopic;
 
-    public String getPublishTopic() {
-        return publishTopic;
-    }
-
-    public void setPublishTopic(String publishTopic) {
-        this.publishTopic = publishTopic;
-    }
-
-    public Integer getQos() {
-        return qos;
-    }
-
-    public void setQos(Integer qos) {
-        this.qos = qos;
-    }
-
-    public List<String> getSubscribeTopic() {
-        return subscribeTopic;
-    }
-
-    public void setSubscribeTopic(List<String> subscribeTopic) {
-        this.subscribeTopic = subscribeTopic;
-    }
 
     public String getHost() {
         return host;
-    }
-
-    public void setHost(String host) {
-        this.host = host;
-    }
-
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public String getUserName() {
         return userName;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public String getPassword() {
+        return password;
     }
 
     public Integer getConnectionTimeout() {
         return connectionTimeout;
     }
 
-    public void setConnectionTimeout(Integer connectionTimeout) {
-        this.connectionTimeout = connectionTimeout;
-    }
-
     public Integer getKeepAliveInterval() {
         return keepAliveInterval;
     }
 
-    public void setKeepAliveInterval(Integer keepAliveInterval) {
-        this.keepAliveInterval = keepAliveInterval;
+    public Integer getQos() {
+        return qos;
+    }
+
+    public List<String> getSubscribeTopic() {
+        return subscribeTopic;
+    }
+
+    public String getPublishTopic() {
+        return publishTopic;
     }
 
     @Override
