@@ -2,8 +2,10 @@ package com.junyi;
 
 
 import com.junyi.entity.Book;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.Optional;
+import java.util.stream.Stream;
 
 /**
  * User: JY
@@ -13,11 +15,19 @@ import java.util.Optional;
 
 
 
+@Slf4j
 public class aaa {
     public static void main(String[] args) {
-        Book book = new Book();
-        Double total = 10.0;
-        total += Optional.ofNullable(book).map(Book::getPrice).orElse(0.0);
-        System.out.println(total);
+
+        Stream.of(100, 200, 300, 400, 500)
+                .mapToLong(e -> e * 10)
+                .filter(e -> e > 2000)
+                .forEach(System.out::println);
+
+        String string = Optional.of("hi,")
+                .map(e -> e + "Java")
+                .map(e -> e + "技术")
+                .map(e -> e + "栈").get();
+        System.out.println(string);
     }
 }

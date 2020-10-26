@@ -5,76 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b770956d-78af-40be-b179-5f0a1bae3a05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../common/.idea/smartfox_info.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/proxy/CglibDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/proxy/DynamicProxyDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/smartfox_info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/TimeMy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/tip/UseFirstNonNullValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/junyi/AsyncMy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/junyi/aaa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/junyi/AsyncMy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/junyi/aaa.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/BitMap_my.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/BitMap_my.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/BitSet_my.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/BitSet_my.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/LinkedHashMapMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/LinkedHashMapMy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/Person.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/aaa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/aaa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/ClassDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/ClassDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/DynamicProxyDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/EnumMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/EnumMy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/IntrospectorMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/IntrospectorMy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/JSONMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/JSONMy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/ListUtilsMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/ListUtilsMy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/OptionalDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/OptionalDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/StringMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/StringJoinMy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/getDataFromComplexJson.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/net/DataGrameSocketClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/net/DataGrameSocketClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/net/DataGrameSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/net/DataGrameSocketServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/stream/Collect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/stream/Collect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/stream/CreateStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/stream/CreateStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/stream/List2Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/stream/List2Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/BitMap_my.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/BitSet_my.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/JDBCDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/LinkedHashMapMy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/Long2Some.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/Solution$ListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/Solution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/StackMy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/String2Some.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/TypeConvert.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/aaa.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/aaa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/AnnotationHandle$Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/AnnotationHandle$Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/AnnotationHandle$Range.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/AnnotationHandle$Range.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/AnnotationHandle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/AnnotationHandle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/ClassDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/ClassDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/DynamicProxyDemo$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/DynamicProxyDemo$Hello.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/DynamicProxyDemo$Hello.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/DynamicProxyDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/DynamicProxyDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/EnumMy$Weekday.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/EnumMy$Weekday.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/EnumMy.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/EnumMy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/IntrospectorMy$Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/IntrospectorMy.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/IntrospectorMy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/JSONMy.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/JSONMy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/ListUtilsMy.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/ListUtilsMy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/OptionalDemo$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/OptionalDemo$Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/OptionalDemo$Inner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/OptionalDemo$Inner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/OptionalDemo$Middle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/OptionalDemo$Middle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/OptionalDemo$Outer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/OptionalDemo$Outer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/OptionalDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/OptionalDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/Print.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/ReadFromCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/ReadFromCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/ReadWriteText.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/ReadWriteText.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/SomethingStrange.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/SomethingStrange.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/StringMy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/net/DataGrameSocketClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/net/DataGrameSocketClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/net/DataGrameSocketServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/net/DataGrameSocketServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/net/SocketClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/net/SocketClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/net/SocketServer$Handler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/net/SocketServer$Handler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/net/SocketServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/net/SocketServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/SomethingStrange.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/usual.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../common/usual.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/concurrentDemo.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,9 +79,22 @@
       <recent name="com.junyi" />
     </key>
   </component>
-  <component name="RunManager" selected="Android JUnit.Client7.test">
-    <configuration name="Client6.test" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="concurrentDemo" />
+  <component name="RunManager" selected="JUnit.AsyncMy.asyncThread3">
+    <configuration name="aaa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.junyi.aaa" />
+      <module name="concurrent-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.junyi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AsyncMy.asyncThread" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="concurrent-demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.junyi.*" />
@@ -131,16 +102,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.junyi" />
-      <option name="MAIN_CLASS_NAME" value="com.junyi.Client6" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="com.junyi.AsyncMy" />
+      <option name="METHOD_NAME" value="asyncThread" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client7.test" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="concurrentDemo" />
+    <configuration name="AsyncMy.asyncThread2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="concurrent-demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.junyi.*" />
@@ -148,16 +118,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.junyi" />
-      <option name="MAIN_CLASS_NAME" value="com.junyi.Client7" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="com.junyi.AsyncMy" />
+      <option name="METHOD_NAME" value="asyncThread2" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tmp.test" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="concurrentDemo" />
+    <configuration name="AsyncMy.asyncThread3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="concurrent-demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.junyi.*" />
@@ -165,16 +134,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.junyi" />
-      <option name="MAIN_CLASS_NAME" value="com.junyi.tmp" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="com.junyi.AsyncMy" />
+      <option name="METHOD_NAME" value="asyncThread3" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="concurrentDemo" />
+    <configuration name="AsyncMy.asyncThread4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="concurrent-demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.junyi.*" />
@@ -182,34 +150,20 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.junyi" />
-      <option name="MAIN_CLASS_NAME" value="com.junyi.Client6" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tmp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="concurrentDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.junyi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.junyi" />
-      <option name="MAIN_CLASS_NAME" value="com.junyi.tmp" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.junyi.AsyncMy" />
+      <option name="METHOD_NAME" value="asyncThread4" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Android JUnit.Client7.test" />
-        <item itemvalue="JUnit.Client6" />
-        <item itemvalue="Android JUnit.tmp.test" />
-        <item itemvalue="Android JUnit.Client6.test" />
-        <item itemvalue="JUnit.tmp" />
+        <item itemvalue="JUnit.AsyncMy.asyncThread3" />
+        <item itemvalue="JUnit.AsyncMy.asyncThread4" />
+        <item itemvalue="JUnit.AsyncMy.asyncThread2" />
+        <item itemvalue="JUnit.AsyncMy.asyncThread" />
+        <item itemvalue="Application.aaa" />
       </list>
     </recent_temporary>
   </component>
@@ -229,43 +183,33 @@
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="tmp_test - 2020.05.09 at 15h 16m 59s.xml">
-      <configuration name="tmp.test" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="tmp_test - 2020.05.09 at 15h 17m 02s.xml">
-      <configuration name="tmp.test" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="tmp_test - 2020.05.09 at 15h 17m 04s.xml">
-      <configuration name="tmp.test" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="tmp_test - 2020.05.09 at 15h 17m 07s.xml">
-      <configuration name="tmp.test" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="tmp_test - 2020.05.09 at 15h 17m 10s.xml">
-      <configuration name="tmp.test" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="tmp_test - 2020.05.09 at 15h 17m 13s.xml">
-      <configuration name="tmp.test" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="tmp_test - 2020.05.09 at 15h 17m 16s.xml">
-      <configuration name="tmp.test" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="Client6 - 2020.05.09 at 15h 17m 40s.xml">
-      <configuration name="Client6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Client7_test - 2020.05.09 at 15h 34m 22s.xml">
-      <configuration name="Client7.test" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="Client7_test - 2020.05.09 at 15h 35m 13s.xml">
-      <configuration name="Client7.test" configurationId="AndroidJUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="11124000" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="689" y="198" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1603702481103">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="198" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603702481103" />
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom" timestamp="1603709588673">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603709588673" />
+    <state width="1877" height="269" key="GridCell.Tab.0.center" timestamp="1603709588672">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603709588672" />
+    <state width="1877" height="269" key="GridCell.Tab.0.left" timestamp="1603709588672">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603709588672" />
+    <state width="1877" height="269" key="GridCell.Tab.0.right" timestamp="1603709588672">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603709588672" />
   </component>
   <component name="masterDetails">
     <states>

@@ -39,7 +39,6 @@ public class OptionalDemo {
                 .map(Book::getName)
                 .map(String::toUpperCase)
                 .orElse(null);
-
     }
 
     // 创建Optional
