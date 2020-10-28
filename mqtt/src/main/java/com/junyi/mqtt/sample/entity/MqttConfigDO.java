@@ -1,8 +1,7 @@
-package com.junyi.mqtt.sample.pojo;
+package com.junyi.mqtt.sample.entity;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 
@@ -56,6 +55,38 @@ public class MqttConfigDO {
 
     public String getPublishTopic() {
         return publishTopic;
+    }
+
+    public void setHost(String host) {
+        this.host = host;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setConnectionTimeout(Integer connectionTimeout) {
+        this.connectionTimeout = connectionTimeout;
+    }
+
+    public void setKeepAliveInterval(Integer keepAliveInterval) {
+        this.keepAliveInterval = keepAliveInterval;
+    }
+
+    public void setQos(Integer qos) {
+        this.qos = qos;
+    }
+
+    public void setSubscribeTopic(List<String> subscribeTopic) {
+        this.subscribeTopic = subscribeTopic;
+    }
+
+    public void setPublishTopic(String publishTopic) {
+        this.publishTopic = publishTopic;
     }
 
     @Override

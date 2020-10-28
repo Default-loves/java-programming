@@ -5,7 +5,6 @@ drzk:
   mqtt:
     host: tcp://127.0.0.1:1883
     qos: 0
-    #MQTT 认证
     userName: admin
     password: public
     connectionTimeout: 20   # 20 second

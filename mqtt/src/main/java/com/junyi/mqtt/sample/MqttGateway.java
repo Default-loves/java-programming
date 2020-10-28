@@ -12,7 +12,7 @@ import org.springframework.messaging.handler.annotation.Header;
  */
 @MessagingGateway(defaultRequestChannel = "mqttOutboundChannel")
 public interface MqttGateway {
-    // 定义重载方法，用于消息发送
+
     void sendToMqtt(String payload);
 
     // 指定topic进行消息发送

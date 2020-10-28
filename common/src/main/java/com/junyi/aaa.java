@@ -18,16 +18,14 @@ import java.util.stream.Stream;
 @Slf4j
 public class aaa {
     public static void main(String[] args) {
+        byte[] array1 = new byte[4 * 1024 * 1024];
+        array1 = null;
 
-        Stream.of(100, 200, 300, 400, 500)
-                .mapToLong(e -> e * 10)
-                .filter(e -> e > 2000)
-                .forEach(System.out::println);
+        byte[] array2 = new byte[2 * 1024 * 1024];
+        byte[] array3 = new byte[2 * 1024 * 1024];
+        byte[] array4 = new byte[2 * 1024 * 1024];
+        byte[] array5 = new byte[128 * 1024];
 
-        String string = Optional.of("hi,")
-                .map(e -> e + "Java")
-                .map(e -> e + "技术")
-                .map(e -> e + "栈").get();
-        System.out.println(string);
+        byte[] array6 = new byte[2 * 1024 * 1024];
     }
 }

@@ -1,12 +1,11 @@
 package com.junyi.mqtt.sample;
 
-import com.junyi.mqtt.sample.pojo.MqttConfigDO;
+import com.junyi.mqtt.sample.entity.MqttConfigDO;
 import lombok.extern.slf4j.Slf4j;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.integration.annotation.IntegrationComponentScan;
 import org.springframework.integration.annotation.ServiceActivator;
 import org.springframework.integration.channel.DirectChannel;
 import org.springframework.integration.core.MessageProducer;
@@ -18,8 +17,6 @@ import org.springframework.integration.mqtt.support.DefaultPahoMessageConverter;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.MessageHandler;
 
-import java.util.Objects;
-
 /**
  * @time: 2020/10/21 11:09
  * @version: 1.0
@@ -28,10 +25,11 @@ import java.util.Objects;
  */
 @Configuration
 @Slf4j
-public class MqttConfig {
+public class MqttConfig  {
 
     @Autowired
     MqttConfigDO mqttConfigDO;
+
 
     /*****
      * 创建MqttPahoClientFactory，设置MQTT Broker连接属性，如果使用SSL验证，也在这里设置。
@@ -39,13 +37,16 @@ public class MqttConfig {
      */
     @Bean
     public MqttPahoClientFactory mqttClientFactory() {
+
+        log.info("mqtt configuration: {}", mqttConfigDO);
         DefaultMqttPahoClientFactory factory = new DefaultMqttPahoClientFactory();
+
         MqttConnectOptions options = new MqttConnectOptions();
         options.setCleanSession(true);
-        log.info("mqtt configuration: {}", mqttConfigDO);
         options.setServerURIs(new String[]{mqttConfigDO.getHost()});
         options.setUserName(mqttConfigDO.getUserName());
         options.setPassword(mqttConfigDO.getPassword().toCharArray());
+        options.setAutomaticReconnect(true);
         options.setConnectionTimeout(mqttConfigDO.getConnectionTimeout());
         options.setKeepAliveInterval(mqttConfigDO.getKeepAliveInterval());
         factory.setConnectionOptions(options);
@@ -65,24 +66,15 @@ public class MqttConfig {
         adapter.setConverter(new DefaultPahoMessageConverter());
         adapter.setQos(mqttConfigDO.getQos());
         adapter.setOutputChannel(mqttInputChannel());
+
         return adapter;
     }
 
-    //ServiceActivator注解表明当前方法用于处理MQTT消息，inputChannel参数指定了用于接收消息信息的channel。
+    //ServiceActivator注解表明当前方法用于处理MQTT消息，inputChannel参数指定了用于接收消息信息的channel
     @Bean
     @ServiceActivator(inputChannel = "mqttInputChannel")
-    public MessageHandler handler() {
-        return message -> {
-            log.info("receive message: {}", message);
-            String payload = message.getPayload().toString();
-            String topic = Objects.requireNonNull(message.getHeaders().get("mqtt_receivedTopic")).toString();
-            // 根据topic分别进行消息处理。
-            if ("book/update".equals(topic)) {
-                log.info("topic:{}, message:{}", topic, payload);
-            } else {
-                log.info("topic:{}, message:{}", topic, payload);
-            }
-        };
+    public DefaultMessageHandler handler() {
+        return new DefaultMessageHandler();
     }
 
     @Bean

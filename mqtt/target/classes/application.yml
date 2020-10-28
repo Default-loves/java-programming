@@ -5,11 +5,11 @@ drzk:
   mqtt:
     host: tcp://127.0.0.1:1883
     qos: 0
-    #MQTT 认证
     userName: admin
-    password: publish
+    password: public
     connectionTimeout: 20   # 20 second
     keepAliveInterval: 20
+    publishTopic: jy
     subscribeTopic:
       - book/update
       - +/apple
