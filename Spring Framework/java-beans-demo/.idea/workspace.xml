@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="42455830-e7a4-4536-ae60-d49cd723bec1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Aha Algorythm（Book）/Bipartite Graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Aha Algorythm（Book）/Breadth-first traversal of graphs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Aha Algorythm（Book）/Chapter Four/count grid(breadth first).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Aha Algorythm（Book）/Chapter Four/count grid(depth first).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Aha Algorythm（Book）/Depth-first traversal of the graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Aha Algorythm（Book）/Depth-first traversal to find the shorest way.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Aha Algorythm（Book）/Dijkstra.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Aha Algorythm（Book）/Dijkstra1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Aha Algorythm（Book）/Find Cut-Edge.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Aha Algorythm（Book）/Find Cut-Point.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Aha Algorythm（Book）/Floyd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Aha Algorythm（Book）/Kruskal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Aha Algorythm（Book）/Prime.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Aha Algorythm（Book）/PrimeLower.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Aha Algorythm（Book）/heap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Aha Algorythm（Book）/union-find sets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Data_structure &amp; Algorythm/Backpack_01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Data_structure &amp; Algorythm/Backpack_full.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Data_structure &amp; Algorythm/King and Gold Mine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Data_structure &amp; Algorythm/Letter combination of phone number.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Data_structure &amp; Algorythm/Sum of Three Number.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Data_structure &amp; Algorythm/sorting algorithm/Cocktail.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Data_structure &amp; Algorythm/sorting algorithm/Fast Sort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Neural Networks/neural network.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Something.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../reptile/Fucai 3D.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../reptile/Pic_Upslash.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm/src/com/junyi/BigNumberSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../test_my.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../test_my.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1e4DpSomW5twa9K7C6VluNAFiww" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../MyGitHub/my/Learn-Spring/Spring Framework" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.junyi.Main" />
+      <module name="java-beans-demo" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42455830-e7a4-4536-ae60-d49cd723bec1" name="Default Changelist" comment="" />
+      <created>1593572153381</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593572153381</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1593572247935">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593572247935" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1593599090903">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593599090903" />
+    <state width="1493" height="141" key="GridCell.Tab.0.bottom" timestamp="1593599134830">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="141" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593599134830" />
+    <state width="1493" height="141" key="GridCell.Tab.0.center" timestamp="1593599134830">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="141" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593599134830" />
+    <state width="1493" height="141" key="GridCell.Tab.0.left" timestamp="1593599134830">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="141" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593599134830" />
+    <state width="1493" height="141" key="GridCell.Tab.0.right" timestamp="1593599134830">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="141" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593599134830" />
+    <state x="490" y="154" width="561" height="524" key="StructurePopup" timestamp="1593574813967">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="490" y="154" width="561" height="524" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1593574813967" />
+    <state x="560" y="86" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1593572225625">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="560" y="86" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1593572225625" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1593574795189">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1593574795189" />
+  </component>
+</project>
