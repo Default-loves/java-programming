@@ -1,5 +1,7 @@
 package com.junyi.entity;
 
+import java.util.List;
+
 /**
  * @time: 2020/9/22 16:19
  * @version: 1.0
@@ -10,6 +12,7 @@ public class Book {
     private Integer id;
     private String name;
     private Double price;
+    private List<String> stringList;
 
     public Book() {
     }
@@ -17,6 +20,14 @@ public class Book {
     public Book(Integer id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    public List<String> getStringList() {
+        return stringList;
+    }
+
+    public void setStringList(List<String> stringList) {
+        this.stringList = stringList;
     }
 
     public Double getPrice() {
