@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Stream;
 
@@ -21,7 +22,7 @@ import java.util.stream.Stream;
 @Slf4j
 public class aaa {
     public static void main(String[] args) {
-        Book book = new Book(1, "apple");
+        log.info(Objects.equals(null, 1)+"");;
     }
 
 }
