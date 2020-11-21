@@ -1,9 +1,9 @@
 server:
-  port: 12345
+  port: 12340
 
 drzk:
   mqtt:
-    host: tcp://127.0.0.1:1883
+    host: tcp://192.168.53.211
     qos: 0
     userName: admin
     password: public

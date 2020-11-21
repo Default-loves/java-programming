@@ -6,9 +6,8 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Stream;
 
 /**
@@ -21,8 +20,14 @@ import java.util.stream.Stream;
 
 @Slf4j
 public class aaa {
+    public static ConcurrentHashMap<String, Integer> CLOUD_PAYMENTtNX = new ConcurrentHashMap<>();
+
     public static void main(String[] args) {
-        log.info(Objects.equals(null, 1)+"");;
+
+        Integer res = CLOUD_PAYMENTtNX.get(null);
+        log.info(res + " ");
+
+
     }
 
 }
