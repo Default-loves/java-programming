@@ -8,6 +8,8 @@ package com.junyi.mqtt.util;
  */
 public class NormalUtil {
 
+
+
     public static String getEvenType(String type) {
         switch (type) {
             case "1": return "入场";
@@ -20,10 +22,10 @@ public class NormalUtil {
 
     public static String getInOutType(String type) {
         switch (type) {
-            case "1": return "大车场入口";
-            case "2": return "大车场出口";
-            case "3": return "小车场入口";
-            case "4": return "小车场出口";
+            case "001": return "大车场入口";
+            case "002": return "大车场出口";
+            case "003": return "小车场入口";
+            case "004": return "小车场出口";
             default: return "default loc";
         }
     }

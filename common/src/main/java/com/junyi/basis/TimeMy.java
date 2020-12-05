@@ -2,7 +2,6 @@ package com.junyi.basis;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -35,7 +34,7 @@ public class TimeMy {
         System.out.println(dateTime);
     }
 
-    /**LocalDate/LocalDateTime转Date**/
+    /** LocalDate/LocalDateTime转Date **/
     @Test
     public void toDate(){
         // LocalDate
@@ -49,13 +48,13 @@ public class TimeMy {
         System.out.println(d2);
     }
 
-    /**日期格式化**/
+    /** 日期格式化 **/
     @Test
     public void formatDate(){
         System.out.println(LocalDateTime.now().format(DATE_TIME_FORMATTER));
     }
 
-    /**日期加减**/
+    /** 日期加减 **/
     @Test
     public void plusDay(){
         LocalDateTime dateTime = LocalDateTime.now(CHINA_ZONE_ID);
@@ -68,9 +67,9 @@ public class TimeMy {
         System.out.println(dateTime.format(DATE_TIME_FORMATTER));
     }
 
-    /**日期时间间隔**/
+    /** 日期时间间隔 **/
     @Test
-    public void betweenDay(){
+    public void betweenDay() {
         // LocalDateTime
         LocalDateTime startDate = LocalDateTime.of(2019,07,01,12,12,22);
         LocalDateTime endDate = LocalDateTime.of(2019,07,03,12,12,22);
@@ -84,7 +83,7 @@ public class TimeMy {
         System.out.println(withSecond2);
     }
 
-    /**第一天and最后一天**/
+    /** 第一天and最后一天 **/
     @Test
     public void theLastDay(){
         // 当月第一天

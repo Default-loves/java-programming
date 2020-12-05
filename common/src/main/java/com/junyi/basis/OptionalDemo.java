@@ -56,7 +56,7 @@ public class OptionalDemo {
         return Optional.ofNullable(outer)
                 .map(Outer::getMiddle)
                 .map(Middle::getInner)
-                .map(o -> new String[]{String.valueOf(o.getInner_id()), o.getName()})
+                .map(o -> new String[]{String.valueOf(o.getInnerId()), o.getName()})
                 .orElse(null);
     }
 
@@ -67,12 +67,12 @@ public class OptionalDemo {
     }
     @Data
     class Middle {
-        private Integer mid_id;
+        private Integer midId;
         private Inner inner;
     }
     @Data
     class Inner {
-        private Integer inner_id;
+        private Integer innerId;
         private String name;
     }
 

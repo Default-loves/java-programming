@@ -5,6 +5,7 @@ import com.junyi.mqtt.sample.entity.Body;
 import com.junyi.mqtt.sample.entity.Request;
 import com.junyi.mqtt.util.NormalUtil;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -20,6 +21,11 @@ import java.time.format.DateTimeFormatter;
 @Slf4j
 public class NestedParkServiceImpl {
     private static final DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+    public static String TOPIC = "%s/publish/data";
+
+
+    @Autowired
+    private MqttGateway mqttGateway;
 
 
     public String inEvent(Request request) {
@@ -27,7 +33,11 @@ public class NestedParkServiceImpl {
         Body body = request.getBody();
         body.setEventTime(dateTime);
         printf(body);
-        return JSON.toJSONString(request);
+        String topic = String.format(TOPIC, body.getParkingNo());
+        String msg = JSON.toJSONString(request);
+        mqttGateway.sendToMqtt(topic, msg);
+
+        return msg;
     }
 
 
@@ -36,7 +46,10 @@ public class NestedParkServiceImpl {
         Body body = request.getBody();
         body.setEventTime(dateTime);
         printf(body);
-        return JSON.toJSONString(request);
+        String topic = String.format(TOPIC, body.getParkingNo());
+        String msg = JSON.toJSONString(request);
+        mqttGateway.sendToMqtt(topic, msg);
+        return msg;
     }
 
     private void printf(Body body) {
