@@ -1,5 +1,6 @@
 package com.junyi.entity;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 /**
@@ -13,6 +14,7 @@ public class Book {
     private String name;
     private Double price;
     private List<String> stringList;
+    private LocalDateTime time;
 
     public Book() {
     }
@@ -20,6 +22,14 @@ public class Book {
     public Book(Integer id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    public LocalDateTime getTime() {
+        return time;
+    }
+
+    public void setTime(LocalDateTime time) {
+        this.time = time;
     }
 
     public List<String> getStringList() {

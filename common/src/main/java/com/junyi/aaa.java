@@ -23,21 +23,7 @@ public class aaa {
 
     public static void main(String[] args) {
 
-        Integer a = null;
-        try {
-            Thread.sleep(1000);
-            a = null;
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        try {
-            Assert.notNull(a, "a is null");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
-        IntStream.rangeClosed(1, 10).forEach(System.out::println);
-        log.info("End");
 
     }
 
