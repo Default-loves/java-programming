@@ -3,6 +3,7 @@ package com.junyi;
 
 import com.junyi.entity.Book;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.Test;
 import org.springframework.util.Assert;
 
 import java.time.LocalDateTime;
@@ -21,10 +22,13 @@ import java.util.stream.Stream;
 @Slf4j
 public class aaa {
 
-    public static void main(String[] args) {
+    @Test
+    public void func() {
+        long a = 10000
+    }
 
-
-
+    private void f1(Integer a) {
+        a -= 1;
     }
 
 }

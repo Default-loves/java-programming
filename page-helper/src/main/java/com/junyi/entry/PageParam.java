@@ -1,4 +1,4 @@
-package com.junyi;
+package com.junyi.entry;
 
 import com.github.pagehelper.IPage;
 import lombok.Data;

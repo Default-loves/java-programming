@@ -1,7 +1,11 @@
-package com.junyi;
+package com.junyi.controller;
 
 
 import com.github.pagehelper.PageInfo;
+import com.junyi.entry.BookRequest;
+import com.junyi.entry.BookResponse;
+import com.junyi.service.BookService;
+import com.junyi.entry.PageParam;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

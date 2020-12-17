@@ -1,4 +1,4 @@
-package com.junyi;
+package com.junyi.entry;
 
 public class BookRequest {
 }

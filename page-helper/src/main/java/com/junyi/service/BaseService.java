@@ -1,8 +1,9 @@
-package com.junyi;
+package com.junyi.service;
 
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.junyi.entry.PageParam;
 
 import java.util.List;
 
