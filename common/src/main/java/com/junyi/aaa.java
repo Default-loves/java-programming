@@ -1,11 +1,14 @@
 package com.junyi;
 
 
+import com.alibaba.fastjson.JSON;
 import com.junyi.entity.Book;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.util.Assert;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -24,7 +27,13 @@ public class aaa {
 
     @Test
     public void func() {
-        long a = 10000
+        try {
+            InetAddress localHost = InetAddress.getLocalHost();
+            log.info("{}, {}, {}", localHost.getHostAddress(), localHost.getAddress(), localHost.getHostName());
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
+
     }
 
     private void f1(Integer a) {
