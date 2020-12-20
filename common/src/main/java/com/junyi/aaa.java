@@ -1,10 +1,19 @@
 package com.junyi;
 
 
+import com.alibaba.fastjson.JSON;
 import com.junyi.entity.Book;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.Test;
+import org.springframework.util.Assert;
 
-import java.util.Optional;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
@@ -13,19 +22,22 @@ import java.util.stream.Stream;
  * Description:
  */
 
-
-
 @Slf4j
 public class aaa {
-    public static void main(String[] args) {
-        byte[] array1 = new byte[4 * 1024 * 1024];
-        array1 = null;
 
-        byte[] array2 = new byte[2 * 1024 * 1024];
-        byte[] array3 = new byte[2 * 1024 * 1024];
-        byte[] array4 = new byte[2 * 1024 * 1024];
-        byte[] array5 = new byte[128 * 1024];
+    @Test
+    public void func() {
+        try {
+            InetAddress localHost = InetAddress.getLocalHost();
+            log.info("{}, {}, {}", localHost.getHostAddress(), localHost.getAddress(), localHost.getHostName());
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
 
-        byte[] array6 = new byte[2 * 1024 * 1024];
     }
+
+    private void f1(Integer a) {
+        a -= 1;
+    }
+
 }

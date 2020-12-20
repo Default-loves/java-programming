@@ -1,0 +1,8 @@
+
+
+server:
+  shutdown: graceful  // 优雅关闭Tomcat服务器，要求spring boot 2.3
+spring:
+  lifecycle:
+    timeout-per-shutdown-phase: 1m  // 最大等待1分钟，将已经接收的Request处理完毕
+

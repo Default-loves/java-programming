@@ -1,11 +1,11 @@
 package com.junyi.mqtt.sample;
 
+import com.junyi.mqtt.sample.entity.Request;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import static com.junyi.mqtt.sample.NestedParkServiceImpl.TOPIC;
 
 /**
  * @time: 2020/10/21 11:13
@@ -14,17 +14,23 @@ import org.springframework.web.bind.annotation.RestController;
  * @description:
  */
 @RestController
-@RequestMapping("book")
+@RequestMapping("nested-park")
 @Slf4j
 public class MqttController {
 
-    @Autowired
-    private MqttGateway mqttGateway;
 
-    @GetMapping("get")
-    public String send(@RequestParam String topic, @RequestParam String message) {
-        mqttGateway.sendToMqtt(topic, message);
-        log.info("send message: {}", message);
-        return "send message : " + message;
+    @Autowired
+    NestedParkServiceImpl service;
+
+    @GetMapping("in")
+    public String in(@RequestBody Request request) {
+        String s = service.inEvent(request);
+        return "send success";
+    }
+
+    @GetMapping("out")
+    public String out(@RequestBody Request request) {
+        String s = service.outEvent(request);
+        return "send success";
     }
 }
