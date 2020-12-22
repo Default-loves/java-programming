@@ -13,6 +13,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -27,13 +28,16 @@ public class aaa {
 
     @Test
     public void func() {
-        try {
-            InetAddress localHost = InetAddress.getLocalHost();
-            log.info("{}, {}, {}", localHost.getHostAddress(), localHost.getAddress(), localHost.getHostName());
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-        }
-
+        Book b1 = new Book();
+        b1.setId(1);
+        b1.setName("abc");
+        Book b2 = new Book();
+        b2.setId(2);
+        b2.setName("eft");
+        List<Book> list = new ArrayList();
+        list.add(b1);
+        list.add(b2);
+        Map<Integer, String> map = list.stream().collect(Collectors.toMap(Book::getId, Book::getName));
     }
 
     private void f1(Integer a) {

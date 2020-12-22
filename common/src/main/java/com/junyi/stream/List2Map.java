@@ -1,6 +1,12 @@
 package com.junyi.stream;
 
+import com.junyi.entity.Book;
+import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -11,6 +17,7 @@ import java.util.stream.Stream;
  * @author: junyi Xu
  * @description: List 转变为 Map
  */
+@Slf4j
 public class List2Map {
     public static void main(String[] args) {
         // 1. 只配置了Key和Value
@@ -30,6 +37,39 @@ public class List2Map {
         Map<Character, String> map3 = data3.collect(Collectors.toMap(
                 s1 -> s1.charAt(0), String::toUpperCase, (s1, s2) -> s1 + "|" + s2, HashMap::new));
         System.out.println(map3);
+    }
 
+    /**
+     * 如果 toMap 中获取的值是 null，那么会导致 NullPointException
+     */
+    @Test
+    public void nullPointException() {
+        List<Book> list = buildList();
+        try {
+            Map<Integer, String> map = list.stream().collect(Collectors.toMap(Book::getId, Book::getName));
+        } catch (Exception e) {
+            log.info(e.toString());
+        }
+    }
+
+    @Test
+    public void fixNullPointException() {
+        List<Book> list = buildList();
+        Map<Integer, String> map = list.stream().collect(HashMap::new, (m, v) -> m.put(v.getId(), v.getName()), HashMap::putAll);
+        log.info(map.toString());
+
+    }
+
+    private List<Book> buildList() {
+        Book b1 = new Book();
+        b1.setId(1);
+        b1.setName("abc");
+        Book b2 = new Book();
+        b2.setId(2);
+        b2.setName(null);   // 坑点
+        List<Book> list = new ArrayList();
+        list.add(b1);
+        list.add(b2);
+        return list;
     }
 }
