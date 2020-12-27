@@ -15,6 +15,7 @@ public class Book {
     private Double price;
     private List<String> stringList;
     private LocalDateTime time;
+    private Shop shop;
 
     public Book() {
     }
@@ -30,6 +31,14 @@ public class Book {
 
     public void setTime(LocalDateTime time) {
         this.time = time;
+    }
+
+    public Shop getShop() {
+        return shop;
+    }
+
+    public void setShop(Shop shop) {
+        this.shop = shop;
     }
 
     public List<String> getStringList() {

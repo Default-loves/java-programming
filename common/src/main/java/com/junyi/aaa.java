@@ -3,6 +3,7 @@ package com.junyi;
 
 import com.alibaba.fastjson.JSON;
 import com.junyi.entity.Book;
+import com.junyi.entity.Shop;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.util.Assert;
@@ -26,18 +27,15 @@ import java.util.stream.Stream;
 @Slf4j
 public class aaa {
 
+
     @Test
     public void func() {
-        Book b1 = new Book();
-        b1.setId(1);
-        b1.setName("abc");
-        Book b2 = new Book();
-        b2.setId(2);
-        b2.setName("eft");
-        List<Book> list = new ArrayList();
-        list.add(b1);
-        list.add(b2);
-        Map<Integer, String> map = list.stream().collect(Collectors.toMap(Book::getId, Book::getName));
+        Book book = new Book();
+        Shop shop = new Shop(1, "big shop");
+        book.setShop(shop);
+        log.info(JSON.toJSONString(book));
+        shop.setDescription("small shop");
+        log.info(JSON.toJSONString(book));
     }
 
     private void f1(Integer a) {
