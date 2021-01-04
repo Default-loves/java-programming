@@ -42,7 +42,6 @@ public class aaa {
         String s2 = s.replaceAll("车辆类型改变为.*", "车辆类型改变为:临时车A");
         log.info(s);
         log.info(s2);
-
     }
 
     private void f1(Integer a) {
