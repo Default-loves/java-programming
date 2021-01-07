@@ -2,6 +2,8 @@ package com.junyi;
 
 
 import com.alibaba.fastjson.JSON;
+import com.google.common.base.Preconditions;
+import com.google.common.collect.ImmutableSet;
 import com.junyi.entity.Book;
 import com.junyi.entity.Shop;
 import lombok.extern.slf4j.Slf4j;
@@ -36,12 +38,8 @@ public class aaa {
 
     @Test
     public void func() {
-        String s = "大车场实际计费时间：00时00分41秒";
-        Pattern pattern = Pattern.compile("车辆类型改变为.*");
-        Matcher matcher = pattern.matcher(s);
-        String s2 = s.replaceAll("车辆类型改变为.*", "车辆类型改变为:临时车A");
-        log.info(s);
-        log.info(s2);
+        String param2 = null;
+        param2 = Preconditions.checkNotNull(param2,"param2 is null");
     }
 
     private void f1(Integer a) {

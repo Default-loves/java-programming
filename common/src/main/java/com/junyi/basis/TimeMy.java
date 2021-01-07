@@ -47,8 +47,8 @@ public class TimeMy {
     @Test
     public void dateToDateTime(){
         Date date = new Date();
-        LocalDateTime dateTime = date.toInstant().atZone(CHINA_ZONE_ID).toLocalDateTime();
-        System.out.println(dateTime);
+        LocalDateTime localDateTime = date.toInstant().atZone(CHINA_ZONE_ID).toLocalDateTime();
+        System.out.println(localDateTime);
     }
 
     /** LocalDate/LocalDateTime转Date **/

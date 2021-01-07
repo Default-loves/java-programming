@@ -5,6 +5,6 @@
 延时任务的4种实现方式：
 
 * 1. 使用 concurrent 包下面的 DelayQueue
-* 2. 使用 Netty包的 HashedWheelTimerMy
+* 2. 使用 Netty包的 HashedWheelTimer
 * 3. 使用 Redis 的 ZSet
 * 4. 使用 RabbitMQ，对于消息设置 TTL，当消息过期的时候发送到特定的队列中由消费者消费过期消息

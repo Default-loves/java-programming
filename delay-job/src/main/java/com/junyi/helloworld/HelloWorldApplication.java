@@ -1,9 +1,5 @@
 package com.junyi.helloworld;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.Arrays;
 
 /**
  * 延时任务，指的是在未来的特定时间才进行触发处理，比如下单后的缴费倒计时，资源拥有者过期释放资源等
