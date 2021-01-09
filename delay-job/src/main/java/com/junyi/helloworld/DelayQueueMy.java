@@ -47,7 +47,7 @@ public class DelayQueueMy {
             this.exeTime = exeTime;
         }
 
-        /** 计算还有多久到期，结果小于0则可以被queue取出 */
+        /** 计算还有多久到期，结果小于0才可以被queue取出 */
         @Override
         public long getDelay(TimeUnit unit) {
             return exeTime - System.currentTimeMillis();

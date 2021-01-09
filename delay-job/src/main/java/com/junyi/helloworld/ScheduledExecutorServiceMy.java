@@ -3,10 +3,7 @@ package com.junyi.helloworld;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
-import java.util.concurrent.Executor;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 /**
  * @time: 2021/1/7 18:23
@@ -27,7 +24,6 @@ public class ScheduledExecutorServiceMy {
     }
 
     class TaskMy implements Runnable{
-
         @Override
         public void run() {
             log.info("hello: {}", cnt++);
