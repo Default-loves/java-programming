@@ -1,13 +1,16 @@
-- `wget http:XXX`下载文件
-- `mv FILE/DIR destFILE/destDIR`：改名
-- `tar -zxvf XXX.tar.gz`
-- mkdir -p data/{0..2}
-- man COMMAND
-- `cp [option] source dest`
+- 显示命令的使用说明：`man COMMAND`
+- 下载文件：`wget http:XXX`
+- 改名/ 移动文件：`mv sourceFILE/DIR destFILE/destDIR`
+- 复制文件：`cp [option] source dest`
     - -u：只更新不一样的
     - -v：显示操作
     - -r：对于文件夹，迭代复制
-- `cp --force --backup=numbered a.txt a.txt`：设置备份
+- 设置备份：`cp --force --backup=numbered a.txt a.txt`
+- 解压文件：`tar -zxvf XXX.tar.gz`
+- 解压文武兼：`unzip XXX.zip`
+- 创建目录：mkdir -p server/log{0..2}
+    - -p：表示目录不存在则自动创建，比如server不存在则会自动创建server目录
+    - 该语句最终会在server目录下创建3个子目录，分别为log0，log1，log2
 - `rm -rf /`：强制删除根目录下的东西
 - `rm -rf *`：强制删除当前目录的所有文件
 - `rm -rf .`：强制删除当前文件及及其子文件夹
