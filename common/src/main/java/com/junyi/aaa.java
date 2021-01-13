@@ -8,6 +8,7 @@ import com.junyi.entity.Book;
 import com.junyi.entity.Person;
 import com.junyi.entity.Shop;
 import lombok.extern.slf4j.Slf4j;
+import org.checkerframework.checker.units.qual.A;
 import org.junit.jupiter.api.Test;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.util.Assert;
@@ -49,13 +50,34 @@ public class aaa {
 
     @Test
     public void func() {
-        SimpleDateFormat format = new SimpleDateFormat("HH时mm分ss秒");
-        format.setTimeZone(TimeZone.getTimeZone("GMT+08:00"));
-        log.info("{}", format.format(new Date()));
+        String[] list = new String[] {"ca","bb","ac"};
+        int res = minDeletionSize(list);
+        log.info(res + "");
     }
 
-    private void f1(Integer a) {
-        a -= 1;
+    public int minDeletionSize(String[] A) {
+        int n = A.length;
+        int m = A[0].length();
+        // point[i] = true，说明A[j]字符串不再需要和A[j+1]字符串比较了
+        boolean[] point = new boolean[n-1];
+        int ans = 0;
+
+        search:
+        for (int j = 0; j < m; ++j) {
+            for (int i = 0; i < n-1; ++i) {
+                if (!point[i] && A[i].charAt(j) > A[i+1].charAt(j)) {   // 降序序列，那么需要删除该列，统计结果加1
+                    ans++;
+                    continue search;
+                }
+            }
+            // 更新 point 数组
+            // 需要注意的是，true值的个数应该是逐渐增加的，即不能够判断后赋值为 false
+            for (int i = 0; i < n-1; ++i) {
+                if (A[i].charAt(j) < A[i+1].charAt(j))
+                    point[i] = true;
+            }
+        }
+        return ans;
     }
 
 }
