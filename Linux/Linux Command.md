@@ -21,6 +21,8 @@
 - `more filename`：分页显示：空格向前，b键向后
 - `less filename`：和more类似，较more灵活
 - `crontab -l`：查看定时执行的任务
+- 查看 yum 下载后的包名：`rpm -qa | grep lrz`
+- 查看文件路径，通常来说都会下载到路径`/usr/bin/`目录下：`rpm -ql lrzsz-0.12.20-36.el7.x86_64`
 
 
 ### 文档编辑
@@ -35,6 +37,24 @@
 进一步筛选12455端口的情况：`netstat -ano | findstr 12455`
 
 强制关闭pid为12345的进程：`taskkill /pid 12345 /f`
+
+
+
+### 上传下载
+
+```shell
+# 对于Uubuntu
+sudo apt-get install lrzsz
+
+# 对于Centos可以用下面的命令
+sudo yum install lrzsz
+
+# 上传
+rz
+
+# 下载
+sz start.sh
+```
 
 
 

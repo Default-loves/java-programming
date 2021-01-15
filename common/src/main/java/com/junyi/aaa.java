@@ -10,9 +10,12 @@ import com.junyi.entity.Shop;
 import lombok.extern.slf4j.Slf4j;
 import org.checkerframework.checker.units.qual.A;
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
+import javax.annotation.Resource;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.text.SimpleDateFormat;
@@ -21,7 +24,7 @@ import java.time.OffsetDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAccessor;
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -35,49 +38,54 @@ import java.util.stream.Stream;
  */
 
 @Slf4j
+@SpringBootTest
 public class aaa {
-    static final int MAXIMUM_CAPACITY = 1 << 30;
 
-    private static int cal(int n) {
-        n -= 1;
-        n |= n >>> 1;
-        n |= n >>> 2;
-        n |= n >>> 4;
-        n |= n >>> 8;
-        n |= n >>> 16;
-        return (n < 0) ? 1 : (n >= MAXIMUM_CAPACITY) ? MAXIMUM_CAPACITY : n + 1;
-    }
+        @Resource
+        private NoteService noteService;
 
-    @Test
-    public void func() {
-        String[] list = new String[] {"ca","bb","ac"};
-        int res = minDeletionSize(list);
-        log.info(res + "");
-    }
+        @Test
+        public void saveNote() {
+            Person entity = Person.builder().name("junyi").build();
+            if (entity != null) {
 
-    public int minDeletionSize(String[] A) {
-        int n = A.length;
-        int m = A[0].length();
-        // point[i] = true，说明A[j]字符串不再需要和A[j+1]字符串比较了
-        boolean[] point = new boolean[n-1];
-        int ans = 0;
-
-        search:
-        for (int j = 0; j < m; ++j) {
-            for (int i = 0; i < n-1; ++i) {
-                if (!point[i] && A[i].charAt(j) > A[i+1].charAt(j)) {   // 降序序列，那么需要删除该列，统计结果加1
-                    ans++;
-                    continue search;
-                }
             }
-            // 更新 point 数组
-            // 需要注意的是，true值的个数应该是逐渐增加的，即不能够判断后赋值为 false
-            for (int i = 0; i < n-1; ++i) {
-                if (A[i].charAt(j) < A[i+1].charAt(j))
-                    point[i] = true;
+            if (entity == null) {
+
+            }
+            new ArrayList<>();
+
+            try {
+                noteService.save(entity);
+            } catch (Exception e) {
+                e.printStackTrace();
+                // FIXME 我想在这里拿到的是 同步异常! [XXX]
+                // FIXME 但是这里拿到的是 Transaction silently rolled back because it has been marked as rollback-only
+                System.out.println(">>>>>>>>>> " + e.getMessage());
             }
         }
-        return ans;
+
+    public List<String> generateParenthesis(int n) {
+        List<String> res = new ArrayList<>();
+        generate(res, "", n, n);
+        return res;
     }
 
-}
+    /**
+     * @param res：最终的结果
+     * @param s：处理的字符串
+     * @param left：左括号剩余数量
+     * @param right：右括号剩余数量
+     */
+    private void generate(List<String> res , String s, int left, int right) {
+        if (left == 0 && right == 0) {
+            res.add(s);
+            return;
+        }
+        if (left != 0)
+            generate(res, s + '(', left-1, right);     //当还有左括号的时候，可以添加左括号
+        if (left < right)
+            generate(res, s + ')', left, right-1);     //只有left小于right的时候，才可以添加右括号
+    }
+
+    }
