@@ -88,4 +88,18 @@ public class aaa {
             generate(res, s + ')', left, right-1);     //只有left小于right的时候，才可以添加右括号
     }
 
+    public int lengthOfLIS(int[] nums) {
+        int n = nums.length;
+        int[] dp = new int[n];
+        for (int i = 0; i < n; i++) {
+            int maxValue = 0;
+            for (int j = i; j >= 0; j--) {
+                if (nums[j] < nums[i] && dp[j] > maxValue)
+                    maxValue = dp[j];
+            }
+            dp[i] = maxValue + 1;
+        }
+        return Arrays.stream(dp).max().getAsInt();
     }
+
+}
