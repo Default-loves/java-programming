@@ -40,6 +40,13 @@ import java.util.stream.Stream;
 @Slf4j
 @SpringBootTest
 public class aaa {
+    public static void main(String[] args) {
+        Pattern pattern = Pattern.compile("[^0-9]");
+//        Pattern pattern = Pattern.compile("\\d*");
+        String s = "820. 单词的压缩编码.md";
+        Matcher matcher = pattern.matcher(s);
+        System.out.println(matcher.replaceAll(" "));
+    }
 
         @Resource
         private NoteService noteService;
@@ -88,18 +95,35 @@ public class aaa {
             generate(res, s + ')', left, right-1);     //只有left小于right的时候，才可以添加右括号
     }
 
-    public int lengthOfLIS(int[] nums) {
-        int n = nums.length;
-        int[] dp = new int[n];
-        for (int i = 0; i < n; i++) {
-            int maxValue = 0;
-            for (int j = i; j >= 0; j--) {
-                if (nums[j] < nums[i] && dp[j] > maxValue)
-                    maxValue = dp[j];
+    public int maxDistance(int[][] grid) {
+        int[] dx = {0, 0, 1, -1};	// 4个方向
+        int[] dy = {-1, 1, 0, 0};
+        Queue<int[]> queue = new ArrayDeque<>();
+        int n = grid.length;
+        for (int i = 0; i < n; i++) {	//查找所有陆地的位置
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] == 1) {
+                    queue.add(new int[]{i, j});
+                }
             }
-            dp[i] = maxValue + 1;
         }
-        return Arrays.stream(dp).max().getAsInt();
+        if (queue.size() == n * n || queue.size() == 0) {    // 全为陆地或者全为海洋
+            return -1;
+        }
+        int[] point = null;
+        while (!queue.isEmpty()) {
+            point = queue.poll();
+            for (int i = 0; i < 4; i++) {
+                int x = point[0] + dx[i];
+                int y = point[1] + dy[i];
+                if (x < 0 || x > n - 1 || y < 0 || y > n - 1 || grid[x][y] != 0) {
+                    continue;
+                }
+                grid[x][y] = grid[point[0]][point[1]] + 1;	// 修改原数据内容存放距离信息
+                queue.add(new int[]{x, y});
+            }
+        }
+        return grid[point[0]][point[1]]-1;
     }
 
 }
