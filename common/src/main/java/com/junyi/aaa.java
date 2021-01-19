@@ -40,12 +40,34 @@ import java.util.stream.Stream;
 @Slf4j
 @SpringBootTest
 public class aaa {
+
+    public boolean canThreePartsEqualSum(int[] A) {
+        int n = A.length;
+        if (n < 3)
+            return false;
+        int sum = 0;		// 计算所有的总和，如果总和不是3的倍数，那么就可以直接返回false
+        for (int item: A)
+            sum += item;
+        if (sum % 3 != 0)
+            return false;
+        int left = 0, right = n - 1;
+        int lSum = A[0];
+        int rSum = A[n - 1];
+        while (left + 1 < right) {
+            if (lSum  == rSum && lSum == sum/3)     // 符合要求，返回 true
+                return true;
+            if (lSum != sum/3){
+                lSum += A[++left];
+            }
+            else {
+                rSum += A[--right];
+            }
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
-        Pattern pattern = Pattern.compile("[^0-9]");
-//        Pattern pattern = Pattern.compile("\\d*");
-        String s = "820. 单词的压缩编码.md";
-        Matcher matcher = pattern.matcher(s);
-        System.out.println(matcher.replaceAll(" "));
+
     }
 
         @Resource

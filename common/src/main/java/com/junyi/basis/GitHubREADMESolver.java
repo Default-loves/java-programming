@@ -19,47 +19,43 @@ import java.util.regex.Pattern;
 public class GitHubREADMESolver {
 
     public void readTextFile(String path) throws IOException {
-        File file = new File(path);
-        String outPath = "F:\\GithubMy\\my\\leetcode\\README.md";
+        String outPath = path + "\\README.md";
         File out = new File(outPath);
-        BufferedWriter bw = null;
         if (out.isFile() && !out.exists()) {
             out.createNewFile();
         }
-        bw = new BufferedWriter(new FileWriter(outPath, false));
         String begin = "# MyLeetCode\n" +
-                    "LeetCode的题目解答，使用的语言是Java\n";
+                       "LeetCode的题目解答，使用的语言是Java\n";
 
+        BufferedWriter bw = new BufferedWriter(new FileWriter(outPath, false));
         bw.write(begin);
         List<String> ignore = Arrays.asList(".git", "Algorithm");
-        for (File one: file.listFiles()) {
-            if (ignore.contains(one.getName())) {
+        for (File outer: new File(path).listFiles()) {
+            if (ignore.contains(outer.getName())) {
                 continue;
             }
-            if (one.isDirectory()) {
-                String a = "./" + one.getName().replaceAll("\\s", "&#32;");
-                bw.write("### " + one.getName() + "\n");
-                File[] files = one.listFiles();
-                Arrays.sort(files, new Comparator<File>() {
-                    @Override
-                    public int compare(File o1, File o2) {
-                        Pattern pattern = Pattern.compile("[^0-9]");
-                        Integer a;
-                        Integer b;
-                        try {
-                            a = Integer.parseInt(pattern.matcher(o1.getName()).replaceAll(""));
-                            b = Integer.parseInt(pattern.matcher(o2.getName()).replaceAll(""));
-                        } catch (Exception e) {
-                            return 0;
-                        }
-                        return a - b;
+            if (outer.isDirectory()) {
+                String a = "./" + outer.getName().replaceAll("\\s", "&#32;");
+                bw.write("### " + outer.getName() + "\n");
+                File[] innerFiles = outer.listFiles();
+                Arrays.sort(innerFiles, (o1, o2) -> {
+                    Pattern pattern = Pattern.compile("[^0-9]");
+                    Integer a1;
+                    Integer b;
+                    try {
+                        a1 = Integer.parseInt(pattern.matcher(o1.getName()).replaceAll(""));
+                        b = Integer.parseInt(pattern.matcher(o2.getName()).replaceAll(""));
+                    } catch (Exception e) {
+                        return 0;
                     }
+                    return a1 - b;
                 });
-                for (File two: files) {
-                    String pre = String.format("- [%s]", two.getName());
-                    String b = "(" + a + "/" + two.getName().replaceAll("\\s", "&#32;") + ")";
-                    System.out.println(pre + b);
-                    bw.write(pre + b + "\n");
+                for (File inner: innerFiles) {
+                    String pre = String.format("- [%s]", inner.getName());
+                    String link = "(" + a + "/" + inner.getName().replaceAll("\\s", "&#32;") + ")";
+                    String line = pre + link + "\n";
+                    System.out.print(line);
+                    bw.write(line);
                 }
             }
         }
@@ -74,27 +70,6 @@ public class GitHubREADMESolver {
     }
 
 
-    public void writeFile(String path){
-        File file = new File(path);
-        BufferedWriter bw = null;
-        try {
-            if (file.isFile() && !file.exists())
-                file.createNewFile();
-            bw = new BufferedWriter(new FileWriter(path, true));
-            bw.write("hello");
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (bw != null){
-                try {
-                    bw.flush();
-                    bw.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-    }
     public static void main(String[] args) {
         GitHubREADMESolver rw = new GitHubREADMESolver();
         String path = "F:\\GithubMy\\my\\leetcode";
@@ -103,6 +78,5 @@ public class GitHubREADMESolver {
         } catch (IOException e) {
             e.printStackTrace();
         }
-//        rw.writeFile(path);
     }
 }
