@@ -41,29 +41,33 @@ import java.util.stream.Stream;
 @SpringBootTest
 public class aaa {
 
-    public boolean canThreePartsEqualSum(int[] A) {
-        int n = A.length;
-        if (n < 3)
-            return false;
-        int sum = 0;		// 计算所有的总和，如果总和不是3的倍数，那么就可以直接返回false
-        for (int item: A)
-            sum += item;
-        if (sum % 3 != 0)
-            return false;
-        int left = 0, right = n - 1;
-        int lSum = A[0];
-        int rSum = A[n - 1];
-        while (left + 1 < right) {
-            if (lSum  == rSum && lSum == sum/3)     // 符合要求，返回 true
-                return true;
-            if (lSum != sum/3){
-                lSum += A[++left];
-            }
+
+    public int[][] findContinuousSequence(int target) {
+        int capacity = 30;
+        int[][] res = new int[capacity][];
+        int left = 1, right = 2;
+        int k = 0;
+        while (right <= target/2+1) {
+            int sum = (left + right)*(right - left + 1)/2;
+            if (sum > target)
+                left++;
+            else if (sum < target)
+                right++;
             else {
-                rSum += A[--right];
+                int[] tmp = new int[right-left+1];
+                for (int i = 0; i < tmp.length; i++) {
+                    tmp[i] = left+i;
+                }
+                res[k++] = tmp;
+                left++;
+                if (k == capacity) {
+                    capacity += capacity;
+                    res = Arrays.copyOf(res, capacity);
+                }
             }
         }
-        return false;
+        res = Arrays.copyOf(res, k);
+        return res;
     }
 
     public static void main(String[] args) {

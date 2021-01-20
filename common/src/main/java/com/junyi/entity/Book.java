@@ -1,5 +1,10 @@
 package com.junyi.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -9,6 +14,10 @@ import java.util.List;
  * @author: junyi Xu
  * @description:
  */
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Book {
     private Integer id;
     private String name;
@@ -16,60 +25,4 @@ public class Book {
     private List<String> stringList;
     private LocalDateTime time;
     private Shop shop;
-
-    public Book() {
-    }
-
-    public Book(Integer id, String name) {
-        this.id = id;
-        this.name = name;
-    }
-
-    public LocalDateTime getTime() {
-        return time;
-    }
-
-    public void setTime(LocalDateTime time) {
-        this.time = time;
-    }
-
-    public Shop getShop() {
-        return shop;
-    }
-
-    public void setShop(Shop shop) {
-        this.shop = shop;
-    }
-
-    public List<String> getStringList() {
-        return stringList;
-    }
-
-    public void setStringList(List<String> stringList) {
-        this.stringList = stringList;
-    }
-
-    public Double getPrice() {
-        return price;
-    }
-
-    public void setPrice(Double price) {
-        this.price = price;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }

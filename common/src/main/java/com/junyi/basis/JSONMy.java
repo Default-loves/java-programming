@@ -17,8 +17,8 @@ import java.util.List;
 public class JSONMy {
 
     public static void main(String[] args) {
-        Book book1 = new Book(1, "apple");
-        Book book2 = new Book(2, "pear");
+        Book book1 = Book.builder().id(1).name("apple").build();
+        Book book2 = Book.builder().id(2).name("pear").build();
         ArrayList<Book> list = new ArrayList<>();
         list.add(book1);
         list.add(book2);
