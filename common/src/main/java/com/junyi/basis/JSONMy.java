@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Stack;
 
 import static java.lang.Math.abs;
 import static java.lang.Math.min;
@@ -31,17 +32,26 @@ public class JSONMy {
         List<Book> parseList = JSON.parseArray(s, Book.class);
     }
 
-    public int minCostClimbingStairs(int[] cost) {
-        int n = cost.length;
-        if (n < 2) {
-            return cost[0];
+    public int longestValidParentheses(String s) {
+        int result = 0;
+        int startIndex = 0;
+        Stack<Integer> stack = new Stack<>();
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '(') {
+                stack.push(i);
+                continue;
+            }
+            if (stack.isEmpty()) {
+                startIndex = i + 1;
+            } else {
+                stack.pop();
+                if (stack.isEmpty()) {
+                    result = Math.max(result, i - startIndex + 1);
+                } else {
+                    result = Math.max(result, i - stack.peek());
+                }
+            }
         }
-        int[] dp = new int[n];
-        dp[0] = cost[0];
-        dp[1] = cost[1];
-        for (int i = 2; i < n; i++) {
-            dp[i] = min(dp[i-1], dp[i-2]) + cost[i];
-        }
-        return min(dp[n-1], dp[n-2]);
+        return result;
     }
 }

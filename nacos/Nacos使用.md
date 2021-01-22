@@ -4,11 +4,9 @@
 
 Nacos实现多环境配置的方案有三个：
 
-1、用命名空间（namespace）来区分不同的环境，一个命名空间对应一个环境；
-
-2、用配置组（group）来区分不同的环境，命名空间用默认的public即可，一个组对应一种环境；
-
-3、用配置集ID（Data ID）名称来区分不同的环境，命名空间和组用默认的即可，通过文件命名来区分；
+1. 用配置集ID（Data ID）名称来区分不同的环境，命名空间和组用默认的即可，通过文件命名来区分；
+2. 用配置组（group）来区分不同的环境，命名空间用默认的public即可，一个组对应一种环境；
+3. 用命名空间（namespace）来区分不同的环境，一个命名空间对应一个环境；
 
 推荐使用命名空间的方式，能够将不同应用的环境分隔开，在一个命名空间中只放置一个应用的配置（包括测试，开发等）
 
@@ -46,7 +44,7 @@ java -Dspring.profiles.active=dev -jar example-0.0.1-SNAPSHOT.jar
 java -Dspring.cloud.nacos.config.group=TEST_GROUP -jar example-0.0.1-SNAPSHOT.jar
 ```
 
-这儿注意的是，文件名应该是XXX-test.properties
+这儿注意的是，运行下面的命令，寻找的文件名应该是XXX-test.properties
 
 ```json
 java -Dspring.profiles.active=test -Dspring.cloud.nacos.config.group=TEST_GROUP -jar example-0.0.1-SNAPSHOT.jar
