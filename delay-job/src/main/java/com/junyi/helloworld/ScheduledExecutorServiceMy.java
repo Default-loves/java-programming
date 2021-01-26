@@ -23,7 +23,7 @@ public class ScheduledExecutorServiceMy {
         Thread.sleep(10_000_000L);
     }
 
-    class TaskMy implements Runnable{
+    class TaskMy implements Runnable {
         @Override
         public void run() {
             log.info("hello: {}", cnt++);
