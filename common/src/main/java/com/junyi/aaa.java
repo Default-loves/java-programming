@@ -19,6 +19,7 @@ import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.OffsetDateTime;
@@ -42,11 +43,9 @@ import java.util.stream.Stream;
 public class aaa {
 
     public static void main(String[] args) {
-        float a = 2.1f;
-        BigDecimal bigDecimal = new BigDecimal(Float.toString(a));
-        bigDecimal = bigDecimal.multiply(BigDecimal.valueOf(100));
-        log.info(a * 100 + "");
-        log.info(bigDecimal.intValue() + "");
+        Integer a = 1;
+        byte[] bytes = a.toString().getBytes(StandardCharsets.UTF_8);
+        log.info(new String(bytes));
     }
 
 }
