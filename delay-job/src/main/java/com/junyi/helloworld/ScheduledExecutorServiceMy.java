@@ -19,7 +19,8 @@ public class ScheduledExecutorServiceMy {
     @Test
     public void test() throws InterruptedException {
         ScheduledExecutorService service = Executors.newScheduledThreadPool(3);
-        service.scheduleAtFixedRate(new TaskMy(), 10_000L, 3_000L, TimeUnit.MILLISECONDS);
+        service.schedule(new TaskMy(), 10_000L,  TimeUnit.MILLISECONDS);
+//        service.scheduleAtFixedRate(new TaskMy(), 10_000L, 3_000L, TimeUnit.MILLISECONDS);
         Thread.sleep(10_000_000L);
     }
 
