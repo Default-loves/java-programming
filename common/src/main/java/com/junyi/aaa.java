@@ -43,9 +43,37 @@ import java.util.stream.Stream;
 public class aaa {
 
     public static void main(String[] args) {
-        Integer a = 1;
-        byte[] bytes = a.toString().getBytes(StandardCharsets.UTF_8);
-        log.info(new String(bytes));
+        int[] array = new int[10];
+        IntStream stream = Arrays.stream(array);
+        Arrays.asList(array);
     }
 
+
+    public class TestableMock {
+
+        /**
+         * 调用任意方法
+         */
+        public String commonMethod() {
+            return " www ".trim() + "." + " javastack".substring(1) + "www.javastack.cn".startsWith(".com");
+        }
+
+
+        /**
+         * 调用成员、静态方法
+         */
+        public String memberMethod(String s) {
+            return "{ \"result\": \"" + innerMethod(s) + staticMethod() + "\"}";
+        }
+
+        private static String staticMethod() {
+            return "WWW_JAVASTACK_CN";
+        }
+
+        private String innerMethod(String website) {
+            return "our website is: " + website;
+        }
+
+
+    }
 }
