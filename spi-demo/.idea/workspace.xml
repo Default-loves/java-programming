@@ -23,59 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3155092f-dbbe-4c53-ba94-b16c7a8b59ee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/java-beans-demo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/out/production/java-beans-demo/com/junyi/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/out/production/java-beans-demo/com/junyi/ioc/java/beans/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/src/com/junyi/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring Framework/java-beans-demo/src/com/junyi/ioc/java/beans/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/VisualBroadcast.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/Bed.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/City.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/Constants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/Hospital.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/MoveTarget.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/MyPanel$MyTimerTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/MyPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/Person$State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/PersonPool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/out/production/VisualBroadcast/com/junyi/broadcast/Virus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/Bed.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/City.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/Constants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/Hospital.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/MoveTarget.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/MyPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/PersonPool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/Point.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VisualBroadcast/src/com/junyi/broadcast/Virus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/child1/target/classes/META-INF/child1.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/child2/child2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/child2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/main/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/child2/src/main/java/com/junyi/child2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/junyi/main/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/child2/target/classes/META-INF/child2.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/child2/target/classes/com/junyi/child2/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +63,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588991231966" />
@@ -125,7 +76,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.junyi.main.Application" />
       <module name="main" />
@@ -159,15 +110,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Example01" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -180,6 +144,7 @@
       <updated>1588777982089</updated>
       <workItem from="1588777984921" duration="2745000" />
       <workItem from="1588990190039" duration="962000" />
+      <workItem from="1613877839626" duration="3414000" />
     </task>
     <servers />
   </component>
@@ -187,7 +152,7 @@
     <option name="totallyTimeSpent" value="3707000" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -199,6 +164,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1877" height="125" key="GridCell.Tab.0.bottom" timestamp="1600828913726">
