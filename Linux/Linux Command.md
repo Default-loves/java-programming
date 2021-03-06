@@ -23,6 +23,7 @@
 - `crontab -l`：查看定时执行的任务
 - 查看 yum 下载后的包名：`rpm -qa | grep lrz`
 - 查看文件路径，通常来说都会下载到路径`/usr/bin/`目录下：`rpm -ql lrzsz-0.12.20-36.el7.x86_64`
+- 创建软连接，即快捷方式，创建order指向start.sh文件：`ln -s /junyi/start.sh /etc/ini.d/order`
 
 
 ### 文档编辑
