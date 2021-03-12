@@ -57,6 +57,17 @@ rz
 sz start.sh
 ```
 
+### 开机自动启动
+
+编辑`/etc/rc.d/rc.local`文件，在当中添加要执行的脚本，比如：
+
+```shell
+~/abc/start.sh &
+/mnt/install.sh &
+```
+
+
+
 
 
 ### 定时任务
