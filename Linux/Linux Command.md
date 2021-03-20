@@ -1,13 +1,14 @@
+- `scp source target`：从source发送文件到target
+    - `scp root@192.168.53.211:/home/abc.log /wasHome/`
 - 显示命令的使用说明：`man COMMAND`
 - 下载文件：`wget http:XXX`
 - 改名/ 移动文件：`mv sourceFILE/DIR destFILE/destDIR`
 - 复制文件：`cp [option] source dest`
-    - -u：只更新不一样的
-    - -v：显示操作
-    - -r：对于文件夹，迭代复制
+    - -rf：对于文件夹，迭代复制，而且不提示。
+    - 复制文件内的所有内容：`cp -rf ./a/* ./target`
 - 设置备份：`cp --force --backup=numbered a.txt a.txt`
 - 解压文件：`tar -zxvf XXX.tar.gz`
-- 解压文武兼：`unzip XXX.zip`
+- 解压zip文件：`unzip XXX.zip`
 - 创建目录：mkdir -p server/log{0..2}
     - -p：表示目录不存在则自动创建，比如server不存在则会自动创建server目录
     - 该语句最终会在server目录下创建3个子目录，分别为log0，log1，log2
@@ -114,6 +115,28 @@ sz start.sh
 30 6 */10 * * ls  意思是每月的1、11、21、31日是的6：30执行一次ls命令
 
 @reboot(sleep90; sh \location\script.sh )
+```
+
+### alias
+
+linux对一些命令设置了别名，常见的如下所示：
+
+```shell
+# 查看别名
+> alias
+alias cp='cp -i'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l.='ls -d .* --color=auto'
+alias ll='ls -l --color=auto'
+alias ls='ls --color=auto'
+alias mv='mv -i'
+alias rm='rm -i'
+alias which='alias | /usr/bin/which --tty-only --read-alias --show-dot --show-tilde'
+
+# 取消别名
+unalias cp
 ```
 
 

@@ -11,6 +11,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
+ * 异步编程的示例
  * @time: 2020/10/26 16:53
  * @version: 1.0
  * @author: junyi Xu

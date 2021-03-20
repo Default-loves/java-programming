@@ -5,97 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b770956d-78af-40be-b179-5f0a1bae3a05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__io_lettuce_lettuce_core_5_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__io_netty_netty_buffer_4_1_51_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__io_netty_netty_codec_4_1_51_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__io_netty_netty_common_4_1_51_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__io_netty_netty_handler_4_1_51_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__io_netty_netty_resolver_4_1_51_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__io_netty_netty_transport_4_1_51_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__io_projectreactor_reactor_core_3_3_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_dom4j_dom4j_2_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_18_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_jboss_jandex_2_1_3_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_springframework_spring_aspects_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_springframework_spring_context_support_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_springframework_spring_orm_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_springframework_spring_oxm_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_springframework_spring_tx_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/deduplication/Deduplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/deduplication/ReqDuplicateHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/gc.log" beforeDir="false" afterPath="$PROJECT_DIR$/../common/gc.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/Pit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/Pit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/aaa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/aaa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/OptionalDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/OptionalDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/TimeMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/TimeMy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/Pit.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/Pit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/aaa.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/aaa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/TimeMy.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/TimeMy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/usual.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../common/usual.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/.idea/concurrentDemo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/.idea/smartfox_info.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/concurrentDemo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/src/main/java/com/junyi/AsyncMy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/src/main/java/com/junyi/Client1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/src/main/java/com/junyi/Client2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/src/main/java/com/junyi/Client3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/src/main/java/com/junyi/Client4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/src/main/java/com/junyi/Client5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/src/main/java/com/junyi/Client6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/src/main/java/com/junyi/Client7.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/src/main/java/com/junyi/aaa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/target/classes/com/junyi/AsyncMy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/target/classes/com/junyi/Client1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/target/classes/com/junyi/Client2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/target/classes/com/junyi/Client3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/target/classes/com/junyi/Client4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/target/classes/com/junyi/Client5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/target/classes/com/junyi/Client6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/target/classes/com/junyi/Client7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrent-demo/target/classes/com/junyi/aaa.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mqtt/src/main/java/com/junyi/mqtt/sample/MqttController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mqtt/src/main/java/com/junyi/mqtt/sample/MqttController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mqtt/src/main/java/com/junyi/mqtt/sample/NestedParkServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mqtt/src/main/java/com/junyi/mqtt/sample/NestedParkServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mqtt/src/main/java/com/junyi/mqtt/util/NormalUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mqtt/src/main/java/com/junyi/mqtt/util/NormalUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mqtt/target/classes/com/junyi/mqtt/sample/MqttController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mqtt/target/classes/com/junyi/mqtt/sample/MqttController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mqtt/target/classes/com/junyi/mqtt/sample/NestedParkServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mqtt/target/classes/com/junyi/mqtt/sample/NestedParkServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mqtt/target/classes/com/junyi/mqtt/util/NormalUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mqtt/target/classes/com/junyi/mqtt/util/NormalUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mqtt/target/in-out-event.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../mqtt/target/in-out-event.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mqtt/target/in-out-event.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../mqtt/target/in-out-event.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/AsyncMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/AsyncMy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +41,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589020364939" />
@@ -153,6 +67,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -232,6 +157,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -244,6 +172,7 @@
       <updated>1588991761816</updated>
       <workItem from="1588991764485" duration="11058000" />
       <workItem from="1592101151789" duration="66000" />
+      <workItem from="1615861291699" duration="3509000" />
     </task>
     <servers />
   </component>
@@ -251,7 +180,7 @@
     <option name="totallyTimeSpent" value="11124000" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="689" y="198" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1603702481103">

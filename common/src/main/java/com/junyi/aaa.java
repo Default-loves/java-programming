@@ -43,9 +43,10 @@ import java.util.stream.Stream;
 public class aaa {
 
     public static void main(String[] args) {
-        int[] array = new int[10];
-        IntStream stream = Arrays.stream(array);
-        Arrays.asList(array);
+        char source = '3';
+        source.
+        String re = "\\w";
+        log.info("result: {}", source.matches(re));
     }
 
 }
