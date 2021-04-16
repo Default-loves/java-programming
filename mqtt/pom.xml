@@ -48,7 +48,7 @@
     </dependencies>
 
     <build>
-        <finalName>in-out-event</finalName>
+        <finalName>virtual-box-in-out-event</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

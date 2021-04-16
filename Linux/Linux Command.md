@@ -78,7 +78,7 @@ sz start.sh
 
 ```shell
 *    *    *    *    *
--    -    -    -    -
+-    -   -    -   -
 |    |    |    |    |
 |    |    |    |    +----- 星期中星期几 (0 - 7) (星期天 为0)
 |    |    |    +---------- 月份 (1 - 12) 
@@ -87,19 +87,18 @@ sz start.sh
 +------------------------- 分钟 (0 - 59)
 
 每一分钟执行一次 /bin/ls：
-
 * * * * * /bin/ls
+
 在 12 月内, 每天的早上 6 点到 12 点，每隔 3 个小时 0 分钟执行一次 /usr/bin/backup：
-
 0 6-12/3 * 12 * /usr/bin/backup
+
 周一到周五每天下午 5:00 寄一封信给 alex@domain.name：
-
 0 17 * * 1-5 mail -s "hi" alex@domain.name < /tmp/maildata
+
 每月每天的午夜 0 点 20 分, 2 点 20 分, 4 点 20 分....执行 echo "haha"：
-
 20 0-23/2 * * * echo "haha"
-下面再看看几个具体的例子：
 
+下面再看看几个具体的例子：
 0 */2 * * * /sbin/service httpd restart  意思是每两个小时重启一次apache 
 
 50 7 * * * /sbin/service sshd start  意思是每天7：50开启ssh服务 
@@ -146,3 +145,23 @@ unalias cp
 - 程序执行常用命令：`nohup XXX > /dev/null 2>&1 &`。`nohup`使启动的程序不会受到SIGHUP信号的影响，即终端关闭后程序还可以继续执行。最后的`&`使程序让出前台终端，只使用`nohup`的话程序会占用前台终端。`> /dev/null 2>&1`表示将标准输出发送到特定的地方（类似于垃圾桶，表示不保存发送过来的信息，统统丢弃掉），`2>&1`表示将标准错误`2`发送到标准输出，即也是丢弃掉标准错误的输出
 - 计算文件的MD5：`md5sum XXX`
 - 生成公私钥：`ssh-keygen`
+
+
+
+常用工具下载
+
+```shell
+–ftp服务
+yum -y install ftp
+–文本编辑
+yum -y install vim
+–下载及上传命令
+yum -y install lrzsz
+–打包
+yum -y install zip unzip
+- 网络工具
+yum install net-tools
+- yum工具
+yum install -y yum-utils
+```
+

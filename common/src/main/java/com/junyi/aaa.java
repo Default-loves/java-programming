@@ -43,10 +43,6 @@ import java.util.stream.Stream;
 public class aaa {
 
     public static void main(String[] args) {
-        char source = '3';
-        source.
-        String re = "\\w";
-        log.info("result: {}", source.matches(re));
     }
 
 }

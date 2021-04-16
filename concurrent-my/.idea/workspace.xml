@@ -5,10 +5,94 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b770956d-78af-40be-b179-5f0a1bae3a05" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/callback.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__com_junyi_remote_1_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_39.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_39.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_3_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_3_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_3_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_3_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_3_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_3_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_springframework_spring_aop_5_2_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_springframework_spring_beans_5_2_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_springframework_spring_context_5_2_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_springframework_spring_core_5_2_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_springframework_spring_expression_5_2_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_springframework_spring_web_5_2_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/libraries/Maven__org_yaml_snakeyaml_1_26.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/common/common.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/common/src/main/java/com/junyi/CallBackMy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/common/src/main/java/com/junyi/CallBackMyImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/local/local.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/local/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/local/src/main/java/com/junyi/Local.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/local/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/remote/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/remote/remote.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/remote/src/main/java/com/junyi/Remote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../callback/remote/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/RandomMy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../distribute/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../distribute/src/main/java/com/junyi/DistributeApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../distribute/src/main/java/com/junyi/RedisLockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../distribute/src/main/java/com/junyi/RedisLockUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../distribute/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linux/Linux Command.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Linux/Linux Command.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/aaa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/aaa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/aaa.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/aaa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/AsyncMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/AsyncMy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/AsyncMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/CompletableFutureMy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/aaa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/aaa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/AsyncMy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/Client1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/Client2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/Client3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/Client4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/Client5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/Client6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/Client7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/aaa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/junyi/aaa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mqtt/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mqtt/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mqtt/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../mqtt/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mqtt/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../mqtt/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mqtt/target/classes/com/junyi/mqtt/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mqtt/target/classes/com/junyi/mqtt/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mqtt/target/in-out-event.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mqtt/target/in-out-event.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mqtt/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../mqtt/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +108,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -47,23 +139,25 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589020364939" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.junyi.entity" />
       <recent name="com.junyi" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AsyncMy.asyncThread3">
+  <component name="RunManager" selected="JUnit.GuardedObject.test">
     <configuration name="aaa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.junyi.aaa" />
       <module name="concurrent-my" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.junyi.demo.*" />
+          <option name="PATTERN" value="com.junyi.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,65 +176,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AsyncMy.asyncThread" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CompletableFutureMy.testThenCombine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="concurrent-my" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.junyi.demo.*" />
+          <option name="PATTERN" value="com.junyi.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.junyi" />
-      <option name="MAIN_CLASS_NAME" value="com.junyi.AsyncMy" />
-      <option name="METHOD_NAME" value="asyncThread" />
+      <option name="MAIN_CLASS_NAME" value="com.junyi.CompletableFutureMy" />
+      <option name="METHOD_NAME" value="testThenCombine" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AsyncMy.asyncThread2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CompletableFutureMy.testThenRun" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="concurrent-my" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.junyi.demo.*" />
+          <option name="PATTERN" value="com.junyi.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.junyi" />
-      <option name="MAIN_CLASS_NAME" value="com.junyi.AsyncMy" />
-      <option name="METHOD_NAME" value="asyncThread2" />
+      <option name="MAIN_CLASS_NAME" value="com.junyi.CompletableFutureMy" />
+      <option name="METHOD_NAME" value="testThenRun" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AsyncMy.asyncThread3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GuardedObject.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="concurrent-my" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.junyi.demo.*" />
+          <option name="PATTERN" value="com.junyi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.junyi" />
-      <option name="MAIN_CLASS_NAME" value="com.junyi.AsyncMy" />
-      <option name="METHOD_NAME" value="asyncThread3" />
+      <option name="MAIN_CLASS_NAME" value="com.junyi.GuardedObject" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AsyncMy.asyncThread4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCountDownLatch.testCountDownLatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="concurrent-my" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.junyi.demo.*" />
+          <option name="PATTERN" value="com.junyi.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.junyi" />
-      <option name="MAIN_CLASS_NAME" value="com.junyi.AsyncMy" />
-      <option name="METHOD_NAME" value="asyncThread4" />
+      <option name="MAIN_CLASS_NAME" value="com.junyi.TestCountDownLatch" />
+      <option name="METHOD_NAME" value="testCountDownLatch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,11 +242,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AsyncMy.asyncThread3" />
-        <item itemvalue="JUnit.AsyncMy.asyncThread4" />
-        <item itemvalue="JUnit.AsyncMy.asyncThread2" />
-        <item itemvalue="JUnit.AsyncMy.asyncThread" />
+        <item itemvalue="JUnit.GuardedObject.test" />
+        <item itemvalue="JUnit.TestCountDownLatch.testCountDownLatch" />
+        <item itemvalue="JUnit.CompletableFutureMy.testThenRun" />
         <item itemvalue="Application.aaa" />
+        <item itemvalue="JUnit.CompletableFutureMy.testThenCombine" />
       </list>
     </recent_temporary>
   </component>
@@ -173,6 +267,13 @@
       <workItem from="1588991764485" duration="11058000" />
       <workItem from="1592101151789" duration="66000" />
       <workItem from="1615861291699" duration="3509000" />
+      <workItem from="1616652088939" duration="3433000" />
+      <workItem from="1616722414382" duration="6289000" />
+      <workItem from="1616984671630" duration="11625000" />
+      <workItem from="1617094095990" duration="3265000" />
+      <workItem from="1617956830199" duration="2349000" />
+      <workItem from="1618554267230" duration="6730000" />
+      <workItem from="1618565331933" duration="1327000" />
     </task>
     <servers />
   </component>
@@ -182,27 +283,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="689" y="198" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1603702481103">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="689" y="198" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603702481103" />
-    <state width="1877" height="269" key="GridCell.Tab.0.bottom" timestamp="1603709588673">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603709588673" />
-    <state width="1877" height="269" key="GridCell.Tab.0.center" timestamp="1603709588672">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="269" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603709588672" />
-    <state width="1877" height="269" key="GridCell.Tab.0.left" timestamp="1603709588672">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="269" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603709588672" />
-    <state width="1877" height="269" key="GridCell.Tab.0.right" timestamp="1603709588672">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="269" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603709588672" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="masterDetails">
     <states>
