@@ -1,5 +1,6 @@
 package com.junyi;
 
+import co.paralleluniverse.fibers.Fiber;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -11,21 +12,22 @@ import java.nio.channels.SocketChannel;
 import java.util.concurrent.locks.LockSupport;
 
 /**
+ * Java 轻量级线程, 性能比 Thread 快很多，相当于其他语言的协程
  * @time: 2021/4/16 16:07
  * @version: 1.0
  * @author: junyi Xu
  * @description:
  */
 public class FiberMy {
-    @Test
-    public void test() throws IOException {
+
+    public static void main(String[] args) throws IOException {
         final ServerSocketChannel ssc = ServerSocketChannel.open().bind(new InetSocketAddress(8080));
         //处理请求
         try {
             while (true) {
                 // 接收请求
                 final SocketChannel sc = ssc.accept();
-                Fiber.schedule(() -> {
+                Fiber.currentFiber().getScheduler().getExecutor().execute(() -> {
                     try {
                         // 读Socket
                         ByteBuffer rb = ByteBuffer

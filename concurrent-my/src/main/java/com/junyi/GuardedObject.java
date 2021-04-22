@@ -14,6 +14,7 @@ import java.util.function.Predicate;
 
 /**
  * 设计模式：Guarded Suspension(保护性暂停)，是一种等待唤醒机制的实现，也叫做“多线程版本的if”
+ * <p/>
  * 常用场景：thread1发送消息，阻塞等待响应，thread2等待消息的接收，消息到达后唤醒thread1线程执行后续操作
  * @time: 2021/3/30 11:06
  * @version: 1.0
