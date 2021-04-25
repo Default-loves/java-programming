@@ -19,7 +19,7 @@ import java.util.concurrent.*;
  * @author: junyi Xu
  * @description:
  */
-public class ProduceComsume {
+public class ProduceConsume {
 
     private static final BlockingDeque<LogMsg> bq = new LinkedBlockingDeque<>();
     private static final ExecutorService es = Executors.newFixedThreadPool(1);

@@ -14,19 +14,105 @@
 * [JVM对synchronized的优化](#jvm对synchronized的优化)
 * [一些实践](#一些实践)
 
+### java内存模型
+
+- java内存模型试图屏蔽各种硬件和操作系统的内存访问差异，实现java程序在各个平台下都能够达到一致的内存访问效果
+- 保证多线程程序的正确性
+
+处理器上的寄存器读写速度比内存的速度快了几个数量级，为了解决速度不一致，在它们之间加入了高速缓存，但是这也导致了缓存不一致的问题
+
+所有的变量都存储在主内存中，而线程有自己的工作内存，工作内存保存了线程使用的变量数据，工作内存存储在高速缓存或者寄存器中
+
+JVM内部的实现通常是依赖于内存屏障，通过禁止某些重排序的方式，提供内存可见性保证，也就是各种happen-before规则。与此同时，需要尽量保证各种编译器、计算机体系结构能够提供一致的行为 
+
+java内存模型定义了8个操作来完成主内存和工作内存之间的交互操作
+
+- read：把一个变量的值从主内存传输到工作内存中
+- load：在 read 之后执行，把 read 得到的值放入工作内存的变量副本中
+- use：把工作内存中一个变量的值传递给执行引擎
+- assign：把一个从执行引擎接收到的值赋给工作内存的变量
+- store：把工作内存的一个变量的值传送到主内存中
+- write：在 store 之后执行，把 store 得到的值放入主内存的变量中
+- lock：作用于主内存的变量
+- unlock
+
+#### 内存模型的三大特性
+
+1. 原子性：java内存模型保证了8个操作都具有原子性。但是java内存模型允许虚拟机将没有被volatile修饰的64位数据的读写操作划分为两次32位的操作来进行
+
+使用AtomicInteger重写之前线程不安全的代码可以得到线程安全的代码实现
+
+```java
+public class AtomicExample {
+    private AtomicInteger cnt = new AtomicInteger();
+
+    public void add() {
+        cnt.incrementAndGet();
+    }
+
+    public int get() {
+        return cnt.get();
+    }
+}
+public static void main(String[] args) throws InterruptedException {
+    final int threadSize = 1000;
+    AtomicExample example = new AtomicExample(); // 只修改这条语句
+    final CountDownLatch countDownLatch = new CountDownLatch(threadSize);
+    ExecutorService executorService = Executors.newCachedThreadPool();
+    for (int i = 0; i < threadSize; i++) {
+        executorService.execute(() -> {
+            example.add();
+            countDownLatch.countDown();
+        });
+    }
+    countDownLatch.await();
+    executorService.shutdown();
+    System.out.println(example.get());
+}
+```
+
+2. 可见性：当一个线程修改了共享变量的值，其他线程能够立即看到新的值。java内存模型在变量修改后就将新值同步回主内存，其他线程在读取变量的时候从主内存刷新变量值实现可见性
+
+3. 有序性：线程内的操作都是有序的。无序是因为发生了指令重排，java内存模型中，允许编译器和处理器对指令进行重排，重排不会影响单线程下应用的执行，但是会影响多线程并发执行的正确性
+
+实现可见性的方法：
+
+1.  volatile。当变量被其修饰的时候，对它的修改会立刻刷新到主内存中，其他变量读取数据的时候会去主内存中读取；
+2. synchronized，对一个变量执行unlock操作之前，必须把变量值同步回主内存；
+3. final。变量不可改变，那么任何时刻值都是固定的
+
+实现有序性的方法：
+
+1. volatile关键字通过添加内存屏障的方式禁止指令重排
+2. 也可以通过synchronized来保证有序性，它保证每个时刻只有一个线程执行同步代码
+
+#### 先行发生原则
+
+也叫作happen-before关系，实现的是前面一个操作的结果对后面的操作是可见的，是java内存模型中保证多线程操作可见性的机制
 
 
-### 使用线程
-有三种使用线程的方法：实现Runnable接口、实现Callable接口、继承Thread抽象类
+1. 单一线程原则：在一个线程内，在程序前面的操作先行发生于后面的操作
+2. 管程锁定规则：一个unlock操作先行发生于后面对同一个锁对象的lock操作
+3. volatile变量规则：对一个volatile变量的写操作先行发生于对这个变量的读操作
+4. Thread对象的start方法调用先行与发生于此线程的每一个动作
+5. Thread对象的结束先行发生于join方法的返回
+6. 对线程interrupt方法的调用先行发生于被中断线程的代码检测到中断事件的发生，可以通过interrupted方法检测到是否有中断发生
+7. 一个对象的初始化完成(构造函数执行结束)先行发生于它的finalize方法的开始
+8. A先行发生于B，B先行发生于C，则A先行发生于C
+
+### 线程
 #### 线程的6种状态
-- 新建
-- 可运行
-- 阻塞：等待获取锁，从而进入synchroonized块等代码
-- 无限期等待：调用join方法、wait等方法
-- 限期等待：调用sleep方法、调用join方法(带时间参数)、调用wait方法(带时间参数)
-- 死亡
+- NEW
+- RUNNABLE：运行状态
+- BLOKING：阻塞状态，等待获取锁
+- WAITING：无限期等待。调用无参数的join()、wait()、LockSupport.park()
+- TIME_WAITING：有限期等待。调用**带参数**的join()、wait()、LockSupport.parkUntil()、LockSupport.parkNanos、Thread.sleep()的方法
+- TERMINATED：运行完毕
+
+有三种使用线程的方法：实现Runnable接口、实现Callable接口、继承Thread抽象类
 
 #### Runnable接口
+
 ```java
 public static class MyRun implements Runnable {
 
@@ -74,7 +160,7 @@ public static void main(String[] args) {
 }
 ```
 
-#### 方法的比较
+#### 比较
 一般我们实现接口而不是继承Thread类，因为java不能多继承，如果继承了Thread则无法继承其他类，java是可以多实现接口的；类可能只要求能够执行就可以了，继承Thread开销过大
 
 ---
@@ -169,7 +255,7 @@ public void execute(Runnable command) {
         this.reject(command);
     }
 }
-``` 
+```
 
 #### ScheduledThreadPool
 在这个线程池提交的线程会反复执行
@@ -438,36 +524,36 @@ JVM实现 | JDK实现
 在下面的代码中，虽然threadB是先启动的，但是在run方法中调用了threadA的join方法，因此threadB线程会被挂起，需要等待threadA执行结束才继续执行
 ```java
 public static class ThreadA extends Thread {
-        public void run() {
-            System.out.println("Thread A");
-        }
+    public void run() {
+        System.out.println("Thread A");
     }
-    public static class ThreadB extends Thread {
-        private ThreadA threadA;
-        public ThreadB(Thread a) {
-            threadA = (ThreadA) a;
-        }
-        public void run() {
-            try {
-                threadA.join();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            System.out.println("Thread B");
-        }
+}
+public static class ThreadB extends Thread {
+    private ThreadA threadA;
+    public ThreadB(Thread a) {
+        threadA = (ThreadA) a;
     }
+    public void run() {
+        try {
+            threadA.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Thread B");
+    }
+}
 
-    public static void main(String[] args) {
-        ThreadA threadA = new ThreadA();
-        ThreadB threadB = new ThreadB(threadA);
-        threadB.start();
-        threadA.start();
-    }
+public static void main(String[] args) {
+    ThreadA threadA = new ThreadA();
+    ThreadB threadB = new ThreadB(threadA);
+    threadB.start();
+    threadA.start();
+}
 // A B
 ```
 
 
-#### wait() notify()和notifyAll()
+#### wait()、notify()和notifyAll()
 调用wait的线程会被挂起，直到其他线程执行notify方法或notifyAll方法唤醒挂起的线程，它们属于Object类，不属于Thread类；只能在同步块或者同步方法中使用，否则在使用的时候会抛出异常java.lang.IllegalMonitorStateException
 
 线程调用了wait方法后会释放当前占用的锁资源，如果没有释放锁，那么其他线程无法进入对象的同步方法或者同步控制块中，无法执行notify方法或者notifyAll方法来唤醒挂起的线程，造成死锁
@@ -499,10 +585,6 @@ Before
 After
 */
 ```
-
-##### wait()和sleep()的区别
-1. wait()是Object的方法，sleep()是Thread的静态方法
-2. wait()会释放锁，而sleep()不释放锁
 
 #### await() signal() signalAll()
 concurrent类库中提供了Condition类来协调线程，可以再condition对象上调用await方法来挂起线程，其他线程调用signal方法或者signalAll方法来唤醒挂起的线程
@@ -578,82 +660,8 @@ public static class UnSafeExample {
     }
 ```
 
-### java内存模型
-- java内存模型试图屏蔽各种硬件和操作系统的内存访问差异，实现java程序在各个平台下都能够达到一致的内存访问效果
-- 保证多线程程序的正确性
 
-处理器上的寄存器读写速度比内存的速度快了几个数量级，为了解决速度不一致，在它们之间加入了高速缓存，但是这也导致了缓存不一致的问题
-
-所有的变量都存储在主内存中，而线程有自己的工作内存，工作内存保存了线程使用的变量数据，工作内存存储在高速缓存或者寄存器中
- 
-JVM内部的实现通常是依赖于内存屏障，通过禁止某些重排序的方式，提供内存可见性保证，也就是各种happen-before规则。与此同时，需要尽量保证各种编译器、计算机体系结构能够提供一致的行为 
- 
-java内存模型定义了8个操作来完成主内存和工作内存之间的交互操作
-- read：把一个变量的值从主内存传输到工作内存中
-- load：在 read 之后执行，把 read 得到的值放入工作内存的变量副本中
-- use：把工作内存中一个变量的值传递给执行引擎
-- assign：把一个从执行引擎接收到的值赋给工作内存的变量
-- store：把工作内存的一个变量的值传送到主内存中
-- write：在 store 之后执行，把 store 得到的值放入主内存的变量中
-- lock：作用于主内存的变量
-- unlock
-
-#### 内存模型的三大特性
-1. 原子性：java内存模型保证了8个操作都具有原子性。但是java内存模型允许虚拟机将没有被volatile修饰的64位数据的读写操作划分为两次32位的操作来进行
-
-使用AtomicInteger重写之前线程不安全的代码可以得到线程安全的代码实现
-```java
-public class AtomicExample {
-    private AtomicInteger cnt = new AtomicInteger();
-
-    public void add() {
-        cnt.incrementAndGet();
-    }
-
-    public int get() {
-        return cnt.get();
-    }
-}
-public static void main(String[] args) throws InterruptedException {
-    final int threadSize = 1000;
-    AtomicExample example = new AtomicExample(); // 只修改这条语句
-    final CountDownLatch countDownLatch = new CountDownLatch(threadSize);
-    ExecutorService executorService = Executors.newCachedThreadPool();
-    for (int i = 0; i < threadSize; i++) {
-        executorService.execute(() -> {
-            example.add();
-            countDownLatch.countDown();
-        });
-    }
-    countDownLatch.await();
-    executorService.shutdown();
-    System.out.println(example.get());
-}
-```
-2. 可见性：当一个线程修改了共享变量的值，其他线程能够立即看到新的值。java内存模型在变量修改后就将新值同步回主内存，其他线程在读取变量的时候从主内存刷新变量值实现可见性
-
-实现可见性的方法：1) volatile。当变量被其修饰的时候，对它的修改会立刻刷新到主内存中，其他变量读取数据的时候会去主内存中读取；2) synchronized，对一个变量执行unlock操作之前，必须把变量值同步回主内存；3) final
-
-3. 有序性：线程内的操作都是有序的。无序是因为发生了指令重排，java内存模型中，允许编译器和处理器对指令进行重排，重排不会影响单线程下应用的执行，但是会影响多线程并发执行的正确性
-
-volatile关键字通过添加内存屏障的方式禁止指令重排
-
-也可以通过synchronized来保证有序性，它保证每个时刻只有一个线程执行同步代码
-
-#### 先行发生原则
-也叫作happen-before关系，是java内存模型中保证多线程操作可见性的机制
-
-可以用volatile和syncronized来保证有序性。除此之外，JVM还规定了先行发生原则，让一个操作无需控制就能先于另一个操作完成。
-
-
-1. 单一线程原则：在一个线程内，在程序前面的操作先行发生于后面的操作
-2. 管程锁定规则：一个unlock操作先行发生于后面对同一个锁对象的lock操作
-3. volatile变量规则：对一个volatile变量的写操作先行发生于对这个变量的读操作
-4. Thread对象的start方法调用先行与发生于此线程的每一个动作
-5. Thread对象的结束先行发生于join方法的返回
-6. 对线程interrupt方法的调用先行发生于被中断线程的代码检测到中断事件的发生，可以通过interrupted方法检测到是否有中断发生
-7. 一个对象的初始化完成(构造函数执行结束)先行发生于它的finalize方法的开始
-8. A先行发生于B，B先行发生于C，则A先行发生于C
+8. 
 
 
 ### 线程安全的实现
@@ -812,3 +820,54 @@ HotSpot虚拟机对象头的数据被称为Mark Word
 - 多用并发集合少用同步集合，例如应该使用ConcurrentHashMap而不是HashTable
 - 使用本地变量和不可变类来保证线程安全
 - 使用线程池而不是创建线程，创建线程代价比较高，线程池可以用有限的的线程来启动任务
+
+
+
+### 管程
+
+管程，指的是管理对共享变量的访问和对共享变量的操作，使其支持并发操作。
+
+在操作系统层面，为了管理对共享变量的访问，可以使用的技术是管程和信号量，Java选择管程技术，synchronize、wait、notify等关键字都是基于管程技术。
+
+
+
+### 无锁方案
+
+线程本地存储、写入时复制（Copy-On-Write）、乐观锁
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

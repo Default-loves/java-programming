@@ -20,6 +20,7 @@ import java.math.BigDecimal;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.nio.charset.StandardCharsets;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.OffsetDateTime;
@@ -43,6 +44,21 @@ import java.util.stream.Stream;
 public class aaa {
 
     public static void main(String[] args) {
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd 00:00:00");
+        Calendar cale = Calendar.getInstance();
+        cale.add(Calendar.MONTH, 0);
+        cale.set(Calendar.DAY_OF_MONTH, 1);
+        String dateStr = formatter.format(cale.getTime());
+        Date parse = parse(dateStr, "yyyy-MM-dd HH:mm:ss");
+        System.out.println(parse);
+    }
+    public static Date parse(String dateStr, String format) {
+        try {
+            return new SimpleDateFormat(format).parse(dateStr);
+        } catch (ParseException e) {
+            ;
+        }
+        return null;
     }
 
 }

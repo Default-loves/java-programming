@@ -1,4 +1,4 @@
-package com.junyi;
+package com.junyi.cases;
 
 import org.junit.jupiter.api.Test;
 import reactor.jarjar.com.lmax.disruptor.RingBuffer;
@@ -48,8 +48,7 @@ public class DisruptorMy {
             bb.putLong(0, l);
             //生产者生产消息
             ringBuffer.publishEvent(
-                    (event, sequence, buffer) ->
-                            event.set(buffer.getLong(0)), bb);
+                    (event, sequence, buffer) -> event.set(buffer.getLong(0)), bb);
             Thread.sleep(1000);
         }
     }
