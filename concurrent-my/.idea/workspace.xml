@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b770956d-78af-40be-b179-5f0a1bae3a05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/aaa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/aaa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/aaa.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/aaa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/TimeMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/TimeMy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/TimeMy.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/TimeMy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/concurrent.md" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/DisruptorMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/cases/DisruptorMy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/ProduceComsume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/ProduceConsume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent1.md" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/TestCountDownLatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/cooperation/TestCountDownLatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/ThreadPoolExecutorMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/ThreadPoolExecutorMy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../other.md" beforeDir="false" afterPath="$PROJECT_DIR$/../other.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +64,8 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -72,20 +74,7 @@
       <recent name="com.junyi" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BrokeLock.test">
-    <configuration name="FiberMy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.junyi.FiberMy" />
-      <module name="concurrent-my" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.junyi.cases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.FutureMy.test">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -115,48 +104,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DisruptorMy.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FutureMy.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="concurrent-my" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.junyi.cases.*" />
+          <option name="PATTERN" value="com.junyi.cooperation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.junyi.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.junyi.cases.DisruptorMy" />
+      <option name="PACKAGE_NAME" value="com.junyi.cooperation" />
+      <option name="MAIN_CLASS_NAME" value="com.junyi.cooperation.FutureMy" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FiberMy.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FutureTaskMy.futureTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="concurrent-my" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.junyi.cases.*" />
+          <option name="PATTERN" value="com.junyi.cooperation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.junyi" />
-      <option name="MAIN_CLASS_NAME" value="com.junyi.FiberMy" />
+      <option name="PACKAGE_NAME" value="com.junyi.cooperation" />
+      <option name="MAIN_CLASS_NAME" value="com.junyi.cooperation.FutureTaskMy" />
+      <option name="METHOD_NAME" value="futureTask" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FutureTaskMy.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="concurrent-my" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.junyi.cooperation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.junyi.cooperation" />
+      <option name="MAIN_CLASS_NAME" value="com.junyi.cooperation.FutureTaskMy" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GuardedObject.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ThreadPoolExecutorMy.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="concurrent-my" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.junyi.cases.*" />
+          <option name="PATTERN" value="com.junyi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.junyi" />
-      <option name="MAIN_CLASS_NAME" value="com.junyi.GuardedObject" />
+      <option name="MAIN_CLASS_NAME" value="com.junyi.ThreadPoolExecutorMy" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -165,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FutureMy.test" />
+        <item itemvalue="JUnit.FutureTaskMy.test" />
+        <item itemvalue="JUnit.FutureTaskMy.futureTask" />
+        <item itemvalue="JUnit.ThreadPoolExecutorMy.test" />
         <item itemvalue="JUnit.BrokeLock.test" />
-        <item itemvalue="JUnit.DisruptorMy.test" />
-        <item itemvalue="Application.FiberMy" />
-        <item itemvalue="JUnit.FiberMy.test" />
-        <item itemvalue="JUnit.GuardedObject.test" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +214,15 @@
       <workItem from="1619051461487" duration="20557000" />
       <workItem from="1619138925693" duration="5258000" />
       <workItem from="1619148422360" duration="3475000" />
-      <workItem from="1619313024326" duration="13917000" />
+      <workItem from="1619313024326" duration="14268000" />
+      <workItem from="1619398667979" duration="7866000" />
+      <workItem from="1619423935084" duration="2724000" />
+      <workItem from="1619441529597" duration="77000" />
+      <workItem from="1619483768047" duration="1979000" />
+      <workItem from="1619486709595" duration="7666000" />
+      <workItem from="1619577073778" duration="10508000" />
+      <workItem from="1619657250097" duration="5810000" />
+      <workItem from="1619746713326" duration="16104000" />
     </task>
     <servers />
   </component>

@@ -285,7 +285,17 @@ ses.scheduleWithFixedDelay(new Task("fixed-delay"), 2, 3, TimeUnit.SECONDS);
 - 如果队列已满且达到了最大线程后还有任务进来，按照拒绝策略处理；
 - 当线程数大于核心线程数时，线程等待 keepAliveTime 后还是没有任务需要处理的话，收缩线程到核心线程数。
 
+#### 拒绝策略
+
+当线程池中的线程都在执行任务，而且工作队列也满了，会执行拒绝策略
+
+- CallerRunsPolicy：提交任务的线程自己去执行该任务。
+- AbortPolicy：默认的拒绝策略，会 throws RejectedExecutionException。
+- DiscardPolicy：直接丢弃任务，没有任何异常抛出。
+- DiscardOldestPolicy：丢弃最老的任务，其实就是把最早进入工作队列的任务丢弃，然后把新任务加入到工作队列。
+
 ### 中断
+
 通过调用一个线程的interrupt()来中断线程，如果线程处于阻塞、限期等待或无限期等待状态，那么就会抛出InterruptedException，从而提前结束该线程。但是不能中断IO阻塞和synchronized锁阻塞
 
 ```java

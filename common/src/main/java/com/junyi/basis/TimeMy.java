@@ -157,4 +157,15 @@ public class TimeMy {
         long current = System.currentTimeMillis();
         log.info(current + "");
     }
+
+    @Test
+    public void parseString() {
+        DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyyMMdd'T'HHmmss");
+        String s = "20151212T121212";
+        LocalDateTime dateTime = LocalDateTime.parse(s, df);
+        System.out.println(dateTime);
+        System.out.println(dateTime.toLocalTime());
+
+
+    }
 }
