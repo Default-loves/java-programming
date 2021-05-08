@@ -1,4 +1,4 @@
-package com.junyi;
+package com.junyi.pattern;
 
 import com.junyi.entity.Message;
 import org.junit.jupiter.api.Test;

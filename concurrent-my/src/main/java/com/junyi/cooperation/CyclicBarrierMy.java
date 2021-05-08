@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
 
 /**
  * CyclicBarrier 主要用于线程之间相互等待
- * CyclicBarrier 的计数器变为0后会自动执行当中的方法，然后将值重置为设定值
+ * CyclicBarrier 的计数器变为0后会自动执行当中的回调方法，然后将值重置为设定值。需要注意的是回调方法执行完后才会重置值然后唤醒因为await等待的线程，因此回调函数里面的checkAndSave方法要另起一个线程执行
  * @time: 2021/4/29 9:42
  * @version: 1.0
  * @author: junyi Xu

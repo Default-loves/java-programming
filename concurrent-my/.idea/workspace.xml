@@ -5,14 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b770956d-78af-40be-b179-5f0a1bae3a05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/TimeMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/basis/TimeMy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/TimeMy.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/TimeMy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/concurrent.md" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concurrent1.md" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/TestCountDownLatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/cooperation/TestCountDownLatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/ThreadPoolExecutorMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/ThreadPoolExecutorMy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../other.md" beforeDir="false" afterPath="$PROJECT_DIR$/../other.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/Balking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/pattern/Balking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/Balking2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/pattern/Balking2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/CompletableFutureMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/cooperation/CompletableFutureMy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/ExecutorCompletionServiceMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/ExecutorCompletionServiceMy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/ExecutorCompletionServiceMy2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/ExecutorCompletionServiceMy2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/GuardedObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/pattern/GuardedObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/cooperation/CyclicBarrierMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/cooperation/CyclicBarrierMy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/cooperation/FutureMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/cooperation/FutureMy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/cooperation/FutureTaskMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/cooperation/FutureTaskMy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/lock/dead/BrokeLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/lock/dead/BrokeLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/CompletableFutureMy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/ExecutorCompletionServiceMy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/junyi/ExecutorCompletionServiceMy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/ExecutorCompletionServiceMy2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/junyi/ExecutorCompletionServiceMy2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/cooperation/FutureMy$Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/junyi/cooperation/FutureMy$Data.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/cooperation/FutureMy$RunnableMy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/junyi/cooperation/FutureMy$RunnableMy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/cooperation/FutureMy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/junyi/cooperation/FutureMy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/cooperation/FutureTaskMy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/junyi/cooperation/FutureTaskMy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/并发容器.md" beforeDir="false" afterPath="$PROJECT_DIR$/并发容器.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,37 +87,19 @@
       <recent name="com.junyi" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FutureMy.test">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ForkJoinMy2.test">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BrokeLock.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="concurrent-my" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.junyi.lock.dead.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.junyi.lock.dead" />
-      <option name="MAIN_CLASS_NAME" value="com.junyi.lock.dead.BrokeLock" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FutureMy.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CompletableFutureMy.supplyAsync" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="concurrent-my" />
       <extension name="coverage">
         <pattern>
@@ -113,14 +108,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.junyi.cooperation" />
-      <option name="MAIN_CLASS_NAME" value="com.junyi.cooperation.FutureMy" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="com.junyi.cooperation.CompletableFutureMy" />
+      <option name="METHOD_NAME" value="supplyAsync" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FutureTaskMy.futureTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CompletableFutureMy.testException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="concurrent-my" />
       <extension name="coverage">
         <pattern>
@@ -129,14 +124,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.junyi.cooperation" />
-      <option name="MAIN_CLASS_NAME" value="com.junyi.cooperation.FutureTaskMy" />
-      <option name="METHOD_NAME" value="futureTask" />
+      <option name="MAIN_CLASS_NAME" value="com.junyi.cooperation.CompletableFutureMy" />
+      <option name="METHOD_NAME" value="testException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FutureTaskMy.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CompletableFutureMy.testThenCombine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="concurrent-my" />
       <extension name="coverage">
         <pattern>
@@ -145,23 +140,39 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.junyi.cooperation" />
-      <option name="MAIN_CLASS_NAME" value="com.junyi.cooperation.FutureTaskMy" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="com.junyi.cooperation.CompletableFutureMy" />
+      <option name="METHOD_NAME" value="testThenCombine" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadPoolExecutorMy.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ForkJoinMy2.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="concurrent-my" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.junyi.*" />
+          <option name="PATTERN" value="com.junyi.cooperation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.junyi" />
-      <option name="MAIN_CLASS_NAME" value="com.junyi.ThreadPoolExecutorMy" />
+      <option name="MAIN_CLASS_NAME" value="com.junyi.ForkJoinMy2" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ForkJoinMy.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="concurrent-my" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.junyi.cooperation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.junyi" />
+      <option name="MAIN_CLASS_NAME" value="com.junyi.ForkJoinMy" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -170,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FutureMy.test" />
-        <item itemvalue="JUnit.FutureTaskMy.test" />
-        <item itemvalue="JUnit.FutureTaskMy.futureTask" />
-        <item itemvalue="JUnit.ThreadPoolExecutorMy.test" />
-        <item itemvalue="JUnit.BrokeLock.test" />
+        <item itemvalue="JUnit.ForkJoinMy2.test" />
+        <item itemvalue="JUnit.ForkJoinMy.test" />
+        <item itemvalue="JUnit.CompletableFutureMy.testException" />
+        <item itemvalue="JUnit.CompletableFutureMy.supplyAsync" />
+        <item itemvalue="JUnit.CompletableFutureMy.testThenCombine" />
       </list>
     </recent_temporary>
   </component>
@@ -223,6 +234,11 @@
       <workItem from="1619577073778" duration="10508000" />
       <workItem from="1619657250097" duration="5810000" />
       <workItem from="1619746713326" duration="16104000" />
+      <workItem from="1620262901194" duration="6213000" />
+      <workItem from="1620271232310" duration="8649000" />
+      <workItem from="1620367767075" duration="9097000" />
+      <workItem from="1620433377162" duration="11223000" />
+      <workItem from="1620453043624" duration="10406000" />
     </task>
     <servers />
   </component>

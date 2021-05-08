@@ -747,45 +747,7 @@ public final int getAndAddInt(Object var1, long var2, int var4) {
 J.U.C包提供了一个带有标记的原子引用类AtomicStampedReference来解决这个问题，它通过控制变量值的版本来保证CAS的正确性。大部分情况下ABA问题不会影响程序并发的正确性，如果需要解决ABA问题，建议使用传统的互斥同步
 
 ---
-#### 不需要同步的方案
-可以使用栈封闭或者线程本地存储
-##### 栈封闭
-多个线程访问同一个方法的局部变量的时候，不会出现线程安全问题，因为局部变量存储在虚拟机栈中，属于线程私有的，也就是说尽量不要使用全局变量，能将变量放在方法内成为局部变量最好
 
-##### 线程本地存储
-如果一段代码所需要的数据需要与其他代码共享，那么看这些共享数据能否保证在同一个线程中执行，如果可以把共享数据的可见范围限制在同一个线程之内，那么无需同步也能够保证线程之间不出现数据争用的问题
-
-一个应用实例就是Web交互模式中的“一个请求对应一个服务器线程”的处理方式，可以使用线程本地存储来解决线程安全问题
-
-可以使用java.lang.ThreadLocal类来实现线程本地存储功能
-```java
-public class ThreadLocalExample {
-    public static void main(String[] args) {
-        ThreadLocal threadLocal = new ThreadLocal();
-        Thread thread1 = new Thread(() -> {
-            threadLocal.set(1);
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            System.out.println(threadLocal.get());
-            threadLocal.remove();
-        });
-        Thread thread2 = new Thread(() -> {
-            threadLocal.set(2);
-            threadLocal.remove();
-        });
-        thread1.start();
-        thread2.start();
-    }
-}
-输出的结果还是1
-```
-
-每个Thread都有一个ThreadLocal.ThreadLocalMap对象。当调用一个ThreadLocal的set方法时，先得到当前线程的ThreadLocalMap对象，然后将ThreadLocal->value键值对插入到该Map中
-
-在一些场景(尤其是使用线程池)下，由于ThreadLocal.ThreadLocalMap的底层数据结构导致ThreadLocal有内存泄露的情况，应该在每次使用ThreadLocal后手动调用remove方法，以避免出现ThreadLocal经典的内存泄露
 
 ---
 ### JVM对synchronized的优化
@@ -843,11 +805,64 @@ HotSpot虚拟机对象头的数据被称为Mark Word
 
 ### 无锁方案
 
-线程本地存储、写入时复制（Copy-On-Write）、乐观锁
+栈封闭、线程本地存储、写入时复制（Copy-On-Write）、乐观读
 
+#### 栈封闭
 
+多个线程访问同一个方法的局部变量的时候，不会出现线程安全问题，因为局部变量存储在虚拟机栈中，属于线程私有的，也就是说尽量不要使用全局变量，能将变量放在方法内成为局部变量最好
 
+#### 线程本地存储
 
+如果一段代码所需要的数据需要与其他代码共享，那么看这些共享数据能否保证在同一个线程中执行，如果可以把共享数据的可见范围限制在同一个线程之内，那么无需同步也能够保证线程之间不出现数据争用的问题
+
+一个应用实例就是Web交互模式中的“一个请求对应一个服务器线程”的处理方式，可以使用线程本地存储来解决线程安全问题
+
+可以使用java.lang.ThreadLocal类来实现线程本地存储功能
+
+```java
+public class ThreadLocalExample {
+    public static void main(String[] args) {
+        ThreadLocal threadLocal = new ThreadLocal();
+        Thread thread1 = new Thread(() -> {
+            threadLocal.set(1);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(threadLocal.get());
+            threadLocal.remove();
+        });
+        Thread thread2 = new Thread(() -> {
+            threadLocal.set(2);
+            threadLocal.remove();
+        });
+        thread1.start();
+        thread2.start();
+    }
+}
+输出的结果还是1
+```
+
+每个Thread都有一个ThreadLocal.ThreadLocalMap对象。当调用一个ThreadLocal的set方法时，先得到当前线程的ThreadLocalMap对象，然后将ThreadLocal->value键值对插入到该Map中
+
+在一些场景(尤其是使用线程池)下，由于ThreadLocal.ThreadLocalMap的底层数据结构导致ThreadLocal有内存泄露的情况，应该在每次使用ThreadLocal后手动调用remove方法，以避免出现ThreadLocal经典的内存泄露
+
+```java
+ExecutorService es = Executors.newFixedThreadPool(3);
+ThreadLocal tl = new ThreadLocal<>();
+es.execute(()->{
+    //ThreadLocal增加变量
+    Object obj = new Object();
+    tl.set(obj);
+    try {
+        // 省略业务逻辑代码
+    }finally {
+        //手动清理ThreadLocal
+        tl.remove();
+    }
+});
+```
 
 
 

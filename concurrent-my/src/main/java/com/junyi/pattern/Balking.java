@@ -1,4 +1,4 @@
-package com.junyi;
+package com.junyi.pattern;
 
 /**
  * Balking 模式
@@ -30,7 +30,7 @@ public class Balking {
         change();
     }
 
-    //改变状态
+    //改变状态，单独将这个并发操作提取出来，和业务逻辑分隔开
     void change(){
         synchronized(this){
             changed = true;

@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import java.util.concurrent.*;
 
 /**
+ * FutureTask 的使用
  * @time: 2021/4/30 14:42
  * @version: 1.0
  * @author: junyi Xu
@@ -17,8 +18,7 @@ public class FutureTaskMy {
     @Test
     public void futureTask() throws ExecutionException, InterruptedException {
         // 创建FutureTask
-        FutureTask<Integer> futureTask
-                = new FutureTask<>(() -> 1 + 2);
+        FutureTask<Integer> futureTask = new FutureTask<>(() -> 1 + 2);
         // 创建线程池
         ThreadPoolExecutor executor = new ThreadPoolExecutor(1, 10, 10, TimeUnit.SECONDS, new LinkedBlockingQueue<>(100)
                 , r -> new Thread(r, "tea" + r.hashCode()));
@@ -32,7 +32,7 @@ public class FutureTaskMy {
 
 
     @Test
-    public void test() {
+    public void tea() {
         ThreadPoolExecutor executor = new ThreadPoolExecutor(3, 10, 10, TimeUnit.SECONDS, new LinkedBlockingQueue<>(100)
                 , r -> new Thread(r, "tea" + r.hashCode()));
 

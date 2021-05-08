@@ -1,4 +1,4 @@
-package com.junyi;
+package com.junyi.pattern;
 
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;

@@ -38,7 +38,6 @@ public class FutureMy {
         ThreadPoolExecutor executor = new ThreadPoolExecutor(1, 10, 10, TimeUnit.SECONDS, new LinkedBlockingQueue<>(100)
                 , r -> new Thread(r, "tea" + r.hashCode()));
 
-
         Data data = new Data();
         Future<Data> future = executor.submit(new RunnableMy(data), data);
         Data response = future.get();

@@ -6,6 +6,8 @@ import java.util.concurrent.*;
 
 /**
  * 异步提交3个任务，返回结果将按照接收顺序添加到阻塞队列中，最后，获取阻塞队列的消息进行处理
+ *
+ * ExecutorCompletionService 适用于批量提交异步任务的场景
  * @time: 2021/3/29 10:40
  * @version: 1.0
  * @author: junyi Xu
@@ -23,6 +25,7 @@ public class ExecutorCompletionServiceMy {
         cs.submit(() -> getInfo3());
         for (int i = 0; i < 3; i++) {
             Integer info = cs.take().get();
+//            Future<Integer> future = cs.poll(3, TimeUnit.SECONDS);// 等待3秒，超时后返回null
             executorService.submit(() -> save(info));
         }
     }

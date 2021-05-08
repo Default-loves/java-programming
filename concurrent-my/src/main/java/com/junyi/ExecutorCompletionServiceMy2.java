@@ -38,6 +38,7 @@ public class ExecutorCompletionServiceMy2 {
 
     }
 
+    /** 获取服务 */
     private Integer getInfo() {
         return null;
     }

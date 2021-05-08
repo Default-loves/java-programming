@@ -64,9 +64,8 @@ t1将变量a加1，此时t1所在核的缓存中变量a数值有变更，但是�
 CompletableFuture默认使用的是ForkJoinPool公共线程池，这个线程池默认的线程数量是CPU的核数，为了避免业务之间互相干扰，使用CompletableFuture的时候，最好指定自己创建的线程池，比如：
 
 ```java
-ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(
-    3, 5, 60, TimeUnit.SECONDS, new ArrayBlockingQueue<>(100));
-CompletableFuture.runAsync(()-> System.out.println("hello"), threadPoolExecutor);
+ForkJoinPool forkJoinPool = new ForkJoinPool(3);
+CompletableFuture.runAsync(()-> System.out.println("hello"), forkJoinPool);
 ```
 
 #### 串行关系
@@ -114,7 +113,7 @@ CompletionStage runAfterEitherAsync(other, action);
 // 报错会执行，对应 catch
 CompletionStage exceptionally(fn);
 
-// 执行完会执行，对应 finally
+// 最终总会执行的代码块，相当于 finally
 // 无返回值
 CompletionStage<R> whenComplete(consumer);
 CompletionStage<R> whenCompleteAsync(consumer);
@@ -122,4 +121,52 @@ CompletionStage<R> whenCompleteAsync(consumer);
 CompletionStage<R> handle(fn);
 CompletionStage<R> handleAsync(fn);
 ````
+
+
+
+### 一些例子
+
+高并发导致的死循环问题，or的赋值在while循环外面，当rf.compareAndSet(or, nr)=false的时候，会导致死循环，修改很简单，将or的赋值放在while循环里面即可
+
+```java
+final AtomicReference rf = new AtomicReference<>( new WMRange(0,0) );
+WMRange or=rf.get();
+do{ 
+    // 检查参数合法性 
+    if(v < or.lower){ 
+        throw new IllegalArgumentException(); 
+    } 
+    nr = new WMRange(v, or.lower); 
+}while(!rf.compareAndSet(or, nr));
+```
+
+```java
+# 正确
+do{ 
+    or = rf.get();
+    // 检查参数合法性 
+    if(v < or.lower){ 
+        throw new IllegalArgumentException(); 
+    } 
+    nr = new WMRange(v, or.lower); 
+}while(!rf.compareAndSet(or, nr));    
+```
+
+共享线程池的问题。下面的代码findRuleByJdbc方法是一个阻塞IO，而且CompletableFuture使用的是公共的ForkJoinPool，容易导致整个ForkJoinPool的线程都阻塞
+
+正确的做法是另外创建一个ForkJoinPool线程池，将任务隔离开而不互相影响
+
+```java
+//采购订单
+PurchersOrder po;
+CompletableFuture<Boolean> cf = 
+  CompletableFuture.supplyAsync(()->{
+    //在数据库中查询规则
+    return findRuleByJdbc();
+  }).thenApply(r -> {
+    //规则校验
+    return check(po, r);
+});
+Boolean isOk = cf.join();
+```
 
