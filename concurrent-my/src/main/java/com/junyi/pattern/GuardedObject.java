@@ -27,19 +27,19 @@ public class GuardedObject<T>{
     T obj;
     final Lock lock = new ReentrantLock();
     final Condition done = lock.newCondition();
-    final int timeout=2;
+    final int timeout = 2;
     //保存所有GuardedObject，Key：message id  Value: GuardedObject
-    final static Map<Object, GuardedObject> gos=new ConcurrentHashMap<>();
+    final static Map<Object, GuardedObject> gos = new ConcurrentHashMap<>();
 
     //静态方法创建GuardedObject
     static <K> GuardedObject create(K key){
-        GuardedObject go=new GuardedObject();
+        GuardedObject go = new GuardedObject();
         gos.put(key, go);
         return go;
     }
 
-    static <K, T> void fireEvent(K key, T obj){
-        GuardedObject go=gos.remove(key);
+    static <K, T> void fireEvent(K key, T obj) {
+        GuardedObject go = gos.remove(key);
         if (go != null){
             go.onChanged(obj);
         }

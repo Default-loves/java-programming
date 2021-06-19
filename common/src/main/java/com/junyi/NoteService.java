@@ -1,5 +1,6 @@
 package com.junyi;
 
+import com.junyi.entity.CommonResponse;
 import com.junyi.entity.Person;
 
 /**
@@ -10,5 +11,6 @@ import com.junyi.entity.Person;
  */
 public interface NoteService {
 
-    public CommonResponse<Person> save(Person note); }
+    public CommonResponse<Person> save(Person note);
+}
 

@@ -1,5 +1,6 @@
 package com.junyi;
 
+import com.junyi.entity.CommonResponse;
 import com.junyi.entity.Person;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

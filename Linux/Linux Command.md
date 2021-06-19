@@ -25,6 +25,7 @@
 - 查看 yum 下载后的包名：`rpm -qa | grep lrz`
 - 查看文件路径，通常来说都会下载到路径`/usr/bin/`目录下：`rpm -ql lrzsz-0.12.20-36.el7.x86_64`
 - 创建软连接，即快捷方式，创建order指向start.sh文件：`ln -s /junyi/start.sh /etc/ini.d/order`
+- vim显示行号：`:set nu`
 
 
 ### 文档编辑
@@ -41,6 +42,23 @@
 强制关闭pid为12345的进程：`taskkill /pid 12345 /f`
 
 
+
+### 文件搜索
+
+```shell
+find [path] [expression] 
+
+根据文件名搜索，严格搜索：find ./ -name today.log
+不区分文件名大小写：find ./ -iname today.log
+搜索文件大小大于100K的文件：find ./ -size +100K
+搜索文件大小小于50K的文件：find ./ -size -50K
+查找目录：-type d
+查找文件：-type f
+查找软链接：-type l
+访问时间在5分钟以内：-amin -5
+文件属性被更改在5分钟以内：-cmin -5
+文件内容被修改：-mmin -5
+```
 
 ### 上传下载
 

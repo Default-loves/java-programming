@@ -1,5 +1,6 @@
 package com.junyi.entity;
 
+import cn.afterturn.easypoi.excel.annotation.Excel;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 import org.junit.jupiter.api.Test;
@@ -12,21 +13,16 @@ import java.time.LocalDateTime;
  * @author: junyi Xu
  * @description:
  */
-@SuperBuilder
+
+@Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString(callSuper = true)
-public class Person extends Base {
+public class Person {
+
+    private Integer id;
+    @Excel(name = "名字")
     private String name;
-
-
-    @Test
-    public void func() {
-        Person person = Person.builder()
-                .id(1)
-                .createDateTime(LocalDateTime.now())
-                .name("junyi")
-                .build();
-        System.out.println(person.toString());
-    }
+    @Excel(name = "日期")
+    private LocalDateTime createDateTime;
 }

@@ -1,5 +1,10 @@
 package com.junyi.cases;
 
+import com.google.common.util.concurrent.RateLimiter;
+import org.junit.jupiter.api.Test;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 import static java.lang.Math.max;
@@ -8,6 +13,7 @@ import static java.lang.Math.min;
 /**
  * Guava RateLimiter 限流器
  * 令牌桶算法
+ *
  * @time: 2021/4/19 17:57
  * @version: 1.0
  * @author: junyi Xu
@@ -29,15 +35,16 @@ class SimpleLimiter {
     void resync(long now) {
         if (now > next) {
             //新产生的令牌数
-            long newPermits = (now-next)/interval;
+            long newPermits = (now - next) / interval;
             //新令牌增加到令牌桶
             storedPermits = min(maxPermits, storedPermits + newPermits);
             //将下一个令牌发放时间重置为当前时间
             next = now;
         }
     }
+
     //预占令牌，返回能够获取令牌的时间
-    synchronized long reserve(long now){
+    synchronized long reserve(long now) {
         resync(now);
         //能够获取令牌的时间
         long at = next;
@@ -51,19 +58,20 @@ class SimpleLimiter {
         this.storedPermits -= fb;
         return at;
     }
+
     //申请令牌
     void acquire() {
         //申请令牌时的时间
         long now = System.nanoTime();
         //预占令牌
-        long at=reserve(now);
-        long waitTime=max(at-now, 0);
+        long at = reserve(now);
+        long waitTime = max(at - now, 0);
         //按照条件等待
-        if(waitTime > 0) {
+        if (waitTime > 0) {
             try {
                 TimeUnit.NANOSECONDS
                         .sleep(waitTime);
-            }catch(InterruptedException e){
+            } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }

@@ -1,19 +1,3 @@
-
-
-* [使用线程](#使用线程)
-* [基础线程机制](#基础线程机制)
-* [Executor](#executor)
-* [中断](#中断)
-* [互斥同步](#互斥同步)
-	* [synchronized](#synchronized)
-	* [ReentrantLock](#reentrantlock)
-* [线程之间的协作](#线程之间的协作)
-* [线程不安全的例子](#线程不安全的例子)
-* [java内存模型](#java内存模型)
-* [线程安全的实现](#线程安全的实现)
-* [JVM对synchronized的优化](#jvm对synchronized的优化)
-* [一些实践](#一些实践)
-
 ### java内存模型
 
 - java内存模型试图屏蔽各种硬件和操作系统的内存访问差异，实现java程序在各个平台下都能够达到一致的内存访问效果

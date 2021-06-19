@@ -4,10 +4,7 @@ import com.junyi.entity.Book;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -67,9 +64,6 @@ public class List2Map {
         Book b2 = new Book();
         b2.setId(2);
         b2.setName(null);   // 坑点
-        List<Book> list = new ArrayList();
-        list.add(b1);
-        list.add(b2);
-        return list;
+        return Arrays.asList(b1, b2);
     }
 }

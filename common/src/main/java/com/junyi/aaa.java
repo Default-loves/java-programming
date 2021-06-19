@@ -1,38 +1,24 @@
 package com.junyi;
 
 
-import com.alibaba.fastjson.JSON;
-import com.google.common.base.Preconditions;
-import com.google.common.collect.ImmutableSet;
-import com.junyi.entity.Book;
-import com.junyi.entity.Person;
-import com.junyi.entity.Shop;
+import cn.afterturn.easypoi.excel.ExcelExportUtil;
+import cn.afterturn.easypoi.excel.entity.ExportParams;
+import com.junyi.entity.*;
+import com.junyi.entity.tmp.CouponVM;
+import com.junyi.entity.tmp.ParkCentralChargeVM;
+import com.junyi.entity.tmp.VwEntryExitVo;
 import lombok.extern.slf4j.Slf4j;
-import org.checkerframework.checker.units.qual.A;
+import org.apache.poi.ss.usermodel.Workbook;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.stereotype.Service;
-import org.springframework.util.Assert;
 
-import javax.annotation.Resource;
-import java.math.BigDecimal;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.nio.charset.StandardCharsets;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
-import java.time.OffsetDateTime;
-import java.time.format.DateTimeFormatter;
-import java.time.temporal.TemporalAccessor;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 /**
  * User: JY
@@ -43,22 +29,83 @@ import java.util.stream.Stream;
 @Slf4j
 public class aaa {
 
-    public static void main(String[] args) {
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd 00:00:00");
-        Calendar cale = Calendar.getInstance();
-        cale.add(Calendar.MONTH, 0);
-        cale.set(Calendar.DAY_OF_MONTH, 1);
-        String dateStr = formatter.format(cale.getTime());
-        Date parse = parse(dateStr, "yyyy-MM-dd HH:mm:ss");
-        System.out.println(parse);
+    public static void main(String[] args) throws ParseException {
+
     }
-    public static Date parse(String dateStr, String format) {
-        try {
-            return new SimpleDateFormat(format).parse(dateStr);
-        } catch (ParseException e) {
-            ;
+    @Test
+    public void testYkt() throws IOException {
+        ArrayList<VwEntryExitVo> list = new ArrayList<>();
+
+        CouponVM c1 = new CouponVM();
+        c1.setDiscountWay("abc");
+        c1.setEquipmentName("door");
+        CouponVM c2 = new CouponVM();
+        c2.setDiscountWay("efg");
+        c2.setEquipmentName("door");
+        ParkCentralChargeVM charge = new ParkCentralChargeVM();
+        charge.setCouponVMList(new ArrayList<>());
+        charge.getCouponVMList().add(c1);
+        charge.getCouponVMList().add(c2);
+        charge.setAccountCharge(10d);
+        charge.setPayCharge(3d);
+        VwEntryExitVo item = new VwEntryExitVo();
+        item.setParkCentralChargeVMList(new ArrayList<>());
+        item.getParkCentralChargeVMList().add(charge);
+        item.setCarNo("粤A12345");
+
+        list.add(item);
+
+
+        Workbook workbook = ExcelExportUtil.exportExcel( new ExportParams("导出测试", null, "测试"),
+                VwEntryExitVo.class, list);
+        File savefile = new File("D:/excel/");
+        if (!savefile.exists()) {
+            savefile.mkdirs();
         }
-        return null;
+        FileOutputStream fos = new FileOutputStream("D:/excel/123.xls");
+        workbook.write(fos);
+        fos.close();
+    }
+
+    @Test
+    public void test() {
+        String s = System.getProperty("user.dir") + "\\DRPark_SDK";
+        System.out.println(s);
+    }
+
+    @Test
+    public void testExportExcel() throws Exception {
+
+        List<CourseEntity> courseEntityList = new ArrayList<>();
+        CourseEntity courseEntity = new CourseEntity();
+        courseEntity.setId("1");
+        courseEntity.setName("测试课程");
+        TeacherEntity teacherEntity = new TeacherEntity();
+        teacherEntity.setName("张老师");
+        teacherEntity.setSex(1);
+        courseEntity.setMathTeacher(teacherEntity);
+
+        List<StudentEntity> studentEntities = new ArrayList<>();
+        for (int i = 1; i <= 2; i++) {
+            StudentEntity studentEntity = new StudentEntity();
+            studentEntity.setName("学生" + i);
+            studentEntity.setSex(i);
+            studentEntity.setBirthday(new Date());
+            studentEntities.add(studentEntity);
+        }
+        courseEntity.setStudents(studentEntities);
+        courseEntityList.add(courseEntity);
+        Date start = new Date();
+        Workbook workbook = ExcelExportUtil.exportExcel( new ExportParams("导出测试", null, "测试"),
+                CourseEntity.class, courseEntityList);
+        System.out.println(new Date().getTime() - start.getTime());
+        File savefile = new File("D:/excel/");
+        if (!savefile.exists()) {
+            savefile.mkdirs();
+        }
+        FileOutputStream fos = new FileOutputStream("D:/excel/教师课程学生导出测试.xls");
+        workbook.write(fos);
+        fos.close();
     }
 
 }
