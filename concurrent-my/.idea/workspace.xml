@@ -5,39 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b770956d-78af-40be-b179-5f0a1bae3a05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__commons_codec_commons_codec_1_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../common/.idea/libraries/Maven__org_apache_directory_studio_org_apache_commons_codec_1_8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/junyi/aaa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/junyi/aaa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/aaa.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/aaa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/TimeMy.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/target/classes/com/junyi/basis/TimeMy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/usual.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../common/usual.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../servlet/.idea/artifacts/servlet_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../servlet/.idea/artifacts/servlet_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concurrent.md" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/FiberMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/pattern/FiberMy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/ProduceConsume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/pattern/ProduceConsume.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/TerminateElegant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/TerminateElegant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/cases/DisruptorMy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/cases/DisruptorMy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/cases/SimpleLimiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/cases/SimpleLimiter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/junyi/pattern/GuardedObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junyi/pattern/GuardedObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/Balking.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/Balking2$Router.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/Balking2$RouterTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/Balking2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/FiberMy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/ForkJoinMy2$CalWordTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/junyi/ForkJoinMy2$CalWordTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/ForkJoinMy2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/junyi/ForkJoinMy2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/GuardedObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/ProduceConsume$Level.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/ProduceConsume$LogMsg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/ProduceConsume.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/TerminateElegant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/junyi/TerminateElegant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/cases/DisruptorMy$LongEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/junyi/cases/DisruptorMy$LongEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/cases/DisruptorMy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/junyi/cases/DisruptorMy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/cases/SimpleLimiter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/junyi/cases/SimpleLimiter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/lock/dead/BrokeLock$Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/junyi/lock/dead/BrokeLock$Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junyi/lock/dead/BrokeLock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/junyi/lock/dead/BrokeLock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet/servlet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet/servlet.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,17 +75,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.DisruptorMy.test">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DisruptorMy.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="concurrent-my" />
       <extension name="coverage">
@@ -259,6 +220,7 @@
       <workItem from="1620694913466" duration="15269000" />
       <workItem from="1620780003351" duration="1490000" />
       <workItem from="1620898569169" duration="971000" />
+      <workItem from="1625215000877" duration="613000" />
     </task>
     <servers />
   </component>
