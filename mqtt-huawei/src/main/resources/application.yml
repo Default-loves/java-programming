@@ -1,0 +1,12 @@
+server:
+  port: 12312
+
+huawei:
+  mqtt:
+    host: a1613b2611.iot-mqtts.cn-north-4.myhuaweicloud.com
+    qos: 0
+    userName: 613ef6eb047d380287e1a377_test-parking-lot
+    password: drzk123456
+    connectionTimeout: 5000   # second
+    keepAliveInterval: 120
+    certificatePath: certificate/ca.jks

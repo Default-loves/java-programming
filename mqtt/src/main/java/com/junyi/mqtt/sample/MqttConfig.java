@@ -3,6 +3,7 @@ package com.junyi.mqtt.sample;
 import com.junyi.mqtt.sample.entity.MqttConfigDO;
 import lombok.extern.slf4j.Slf4j;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
+import org.eclipse.paho.client.mqttv3.MqttTopic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,6 +18,10 @@ import org.springframework.integration.mqtt.support.DefaultPahoMessageConverter;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.MessageHandler;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * @time: 2020/10/21 11:09
  * @version: 1.0
@@ -29,6 +34,8 @@ public class MqttConfig  {
 
     @Autowired
     MqttConfigDO mqttConfigDO;
+
+    private MqttPahoMessageDrivenChannelAdapter adapter;
 
 
     /*****
@@ -61,14 +68,21 @@ public class MqttConfig  {
     @Bean
     public MessageProducer inbound() {
         MqttPahoMessageDrivenChannelAdapter adapter = new MqttPahoMessageDrivenChannelAdapter("consumerClient",
-                mqttClientFactory(), mqttConfigDO.getSubscribeTopic().toArray(new String[0]));
+                mqttClientFactory(), getTopics());
         adapter.setCompletionTimeout(5000);
         adapter.setConverter(new DefaultPahoMessageConverter());
         adapter.setQos(mqttConfigDO.getQos());
         adapter.setOutputChannel(mqttInputChannel());
-
+        this.adapter = adapter;
         return adapter;
     }
+
+    private String[] getTopics() {
+        List<String> topicList = mqttConfigDO.getSubscribeTopic();
+        log.info("【topic：{}】", topicList.toString());
+        return topicList.toArray(new String[0]);
+    }
+
 
     //ServiceActivator注解表明当前方法用于处理MQTT消息，inputChannel参数指定了用于接收消息信息的channel
     @Bean
@@ -96,5 +110,10 @@ public class MqttConfig  {
         messageHandler.setAsync(true);
         messageHandler.setDefaultTopic(mqttConfigDO.getPublishTopic());
         return messageHandler;
+    }
+
+
+    public MqttPahoMessageDrivenChannelAdapter getAdapter() {
+        return adapter;
     }
 }

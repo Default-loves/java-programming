@@ -121,7 +121,7 @@
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-test:2.4.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.directory.studio:org.apache.commons.codec:1.8" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.14" level="project" />
-    <orderEntry type="library" name="Maven: cn.hutool:hutool-core:5.6.5" level="project" />
+    <orderEntry type="library" name="Maven: cn.hutool:hutool-all:5.6.5" level="project" />
     <orderEntry type="library" name="Maven: cn.afterturn:easypoi-spring-boot-starter:4.0.0" level="project" />
     <orderEntry type="library" name="Maven: cn.afterturn:easypoi-web:4.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:5.2.8.RELEASE" level="project" />
