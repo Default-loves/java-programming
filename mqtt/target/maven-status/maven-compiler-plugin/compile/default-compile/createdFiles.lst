@@ -6,9 +6,10 @@ com\junyi\mqtt\sample\MqttGateway.class
 com\junyi\mqtt\sample\entity\Body.class
 com\junyi\mqtt\Application.class
 com\junyi\mqtt\sample\entity\Request.class
+com\junyi\mqtt\controller\MqttController.class
 com\junyi\mqtt\sample\entity\Head.class
-com\junyi\mqtt\sample\MqttController.class
 com\junyi\mqtt\other\MqttClientMy.class
 com\junyi\mqtt\util\NormalUtil.class
 com\junyi\mqtt\sample\MqttConfig.class
+com\junyi\mqtt\controller\ConnectController.class
 com\junyi\mqtt\sample\ApplicationListenerMy.class

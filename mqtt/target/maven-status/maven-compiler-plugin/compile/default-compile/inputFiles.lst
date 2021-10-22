@@ -1,8 +1,8 @@
 F:\GithubMy\my\java-programming\mqtt\src\main\java\com\junyi\mqtt\aaa.java
 F:\GithubMy\my\java-programming\mqtt\src\main\java\com\junyi\mqtt\sample\DefaultMessageHandler.java
-F:\GithubMy\my\java-programming\mqtt\src\main\java\com\junyi\mqtt\sample\MqttController.java
 F:\GithubMy\my\java-programming\mqtt\src\main\java\com\junyi\mqtt\sample\MqttGateway.java
 F:\GithubMy\my\java-programming\mqtt\src\main\java\com\junyi\mqtt\Application.java
+F:\GithubMy\my\java-programming\mqtt\src\main\java\com\junyi\mqtt\controller\ConnectController.java
 F:\GithubMy\my\java-programming\mqtt\src\main\java\com\junyi\mqtt\other\MqttClientMy.java
 F:\GithubMy\my\java-programming\mqtt\src\main\java\com\junyi\mqtt\sample\entity\MqttConfigDO.java
 F:\GithubMy\my\java-programming\mqtt\src\main\java\com\junyi\mqtt\util\NormalUtil.java
@@ -12,3 +12,4 @@ F:\GithubMy\my\java-programming\mqtt\src\main\java\com\junyi\mqtt\sample\entity\
 F:\GithubMy\my\java-programming\mqtt\src\main\java\com\junyi\mqtt\sample\ApplicationListenerMy.java
 F:\GithubMy\my\java-programming\mqtt\src\main\java\com\junyi\mqtt\sample\MqttConfig.java
 F:\GithubMy\my\java-programming\mqtt\src\main\java\com\junyi\mqtt\sample\NestedParkServiceImpl.java
+F:\GithubMy\my\java-programming\mqtt\src\main\java\com\junyi\mqtt\controller\MqttController.java

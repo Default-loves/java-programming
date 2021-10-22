@@ -1,10 +1,20 @@
 
 
-类A中字段是`String`类型，内容为JSON，那么如果对类A进行序列化后，会导致字段`jsonStr`添加很多无用的`\`，解决方法如下：
+类A中字段是`String`类型，内容为JSON，那么如果对类A进行序列化后，会导致字段`jsonStr`添加很多无用的斜杠`\`，解决方法如下：
 
 ```java
+
+import com.alibaba.fastjson.annotation.JSONField;
 class A{
     @JSONField(jsonDirect=true)
+    public String jsonStr;
+     ...
+}
+
+// 或者
+import com.fasterxml.jackson.annotation.JsonRawValue;
+class A{
+    @JsonRawValue
     public String jsonStr;
      ...
 }

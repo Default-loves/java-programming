@@ -87,6 +87,22 @@ sz start.sh
 
 
 
+### 设置服务
+
+```shell
+1. 编写shell脚本，比如test.sh，内容如下：
+#!/bin/bash
+echo "haha"
+
+2. 添加软链接，注意路径使用绝对路径
+ln -s /home/jy/test.sh /etc/init.d/test
+
+3. 然后就可以执行一下命令
+service test
+```
+
+
+
 
 
 ### 定时任务
@@ -188,3 +204,4 @@ yum install net-tools
 yum install -y yum-utils
 ```
 
+s

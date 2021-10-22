@@ -158,3 +158,33 @@ upstream test {
 }
 ```
 
+
+
+
+
+### 扫描nginx日志，将请求频繁的ip拒绝访问
+
+```shell
+将blockip.conf添加到nginx.conf中，其中blockip.conf包含了恶意的ip
+http {
+	include blocksip.conf;
+}
+
+
+编写脚本获取恶意ip
+#!/bin/bash
+nginx_home=/usr/local/webserver/nginx
+log_path=/usr/local/webserver/nginx/logs
+tail -n50000 /usr/local/webserver/nginx/logs/access.log \
+|awk '{print $1,$12}' \
+|grep -i -v -E "google|yahoo|baidu|msnbot|FeedSky|sogou" \
+|awk '{print $1}'|sort|uniq -c|sort -rn \
+|awk '{if($1>1000)print "deny "$2";"}' >$nginx_home/conf/vhost/blockip.conf
+# 重启 nginx
+/etc/init.d/nginx reload
+
+
+
+
+```
+

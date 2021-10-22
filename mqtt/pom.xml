@@ -53,7 +53,7 @@
     </dependencies>
 
     <build>
-        <finalName>virtual-box-in-out-event</finalName>
+        <finalName>5314</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

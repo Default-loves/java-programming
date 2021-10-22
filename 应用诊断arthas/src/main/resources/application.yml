@@ -1,0 +1,8 @@
+
+
+server:
+  port: 12388
+
+spring:
+  application:
+    name: test-arthas
