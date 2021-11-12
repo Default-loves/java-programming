@@ -31,7 +31,7 @@ String d = str1 + str2; // 常量池中的对象
 System.out.println(c == d);// true
 ```
 
-使用`new`关键字创建的字符串对象，都是独立的堆上的新对象
+使用`new`关键字创建的字符串对象，会在堆内存中创建一个对象，同时字符串常量池中如果没有字面量相同的对象则会另外创建，因此通过`new`创建的字符串对象，最多可能会生成两个对象
 
 ```java
 String str1 = "abcd";
@@ -40,4 +40,25 @@ String str3 = new String("abcd");
 System.out.println(str1==str2);		// false
 System.out.println(str2==str3);		// false
 ```
+
+
+
+intern()操作，会去字符串常量池中查找是否有等于该字符串对象的引用，如果有则返回字符串常量池中的引用
+
+```java
+String str1= "abc";
+String str2= new String("abc");
+String str3= str2.intern();
+System.out.println(str1==str2);     // false
+System.out.println(str2==str3);     // false
+System.out.println(str1==str3);     // true
+
+
+
+String a =new String("abc").intern();
+String b = new String("abc").intern();
+System.out.println(a==b);     // true
+```
+
+
 

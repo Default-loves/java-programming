@@ -28,7 +28,7 @@ public class HashedWheelTimerMy {
         hashedWheelTimer.newTimeout(timeout -> {
             System.out.println("执行一个任务，ID = 1, time= " + LocalDateTime.now());
             cdl.countDown();
-        }, 10, TimeUnit.SECONDS);
+        }, 2, TimeUnit.SECONDS);
 
         System.out.println("加入一个任务，ID = 2, time= " + LocalDateTime.now());
         hashedWheelTimer.newTimeout(timeout -> {
@@ -40,7 +40,7 @@ public class HashedWheelTimerMy {
         hashedWheelTimer.newTimeout(timeout -> {
             System.out.println("执行一个任务，ID = 3, time= " + LocalDateTime.now());
             cdl.countDown();
-        }, 6, TimeUnit.SECONDS);
+        }, 1, TimeUnit.SECONDS);
 
         System.out.println("等待任务执行===========");
         cdl.await(1, TimeUnit.MINUTES);

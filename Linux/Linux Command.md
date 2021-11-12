@@ -7,6 +7,7 @@
     - -rf：对于文件夹，迭代复制，而且不提示。
     - 复制文件内的所有内容：`cp -rf ./a/* ./target`
 - 设置备份：`cp --force --backup=numbered a.txt a.txt`
+- 压缩文件：`zip -r a.zip ./web`
 - 解压文件：`tar -zxvf XXX.tar.gz`
 - 解压zip文件：`unzip XXX.zip`
 - 创建目录：mkdir -p server/log{0..2}

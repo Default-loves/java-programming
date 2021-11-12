@@ -4,7 +4,8 @@ server:
 drzk:
   mqtt:
 #    host: tcp://172.16.40.106
-    host: tcp://192.168.53.14:1883
+#    host: tcp://192.168.53.14:1883
+    host: tcp://183.11.232.234:1883
 #    host: tcp://192.168.53.211
     qos: 0
     userName: admin

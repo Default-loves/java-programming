@@ -5,14 +5,13 @@ import org.junit.jupiter.api.Test;
 import java.time.LocalDateTime;
 import java.util.concurrent.DelayQueue;
 import java.util.concurrent.Delayed;
-import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
  * @time: 2020/12/19 11:50
  * @version: 1.0
  * @author: junyi Xu
- * @description: 使用 concurrent 包下面的 DelayQueue
+ * @description: 使用 java concurrent 包下面的 DelayQueue
  * @see java.util.concurrent.DelayQueue
  */
 public class DelayQueueMy {
@@ -24,15 +23,26 @@ public class DelayQueueMy {
         DelayQueue<DelayTask> queue = new DelayQueue<>();
         long now = System.currentTimeMillis();
         queue.add(new DelayTask(1, now + 3000L));
-        queue.add(new DelayTask(2, now + 10000L));
-        queue.add(new DelayTask(3, now + 6000L));
+        queue.add(new DelayTask(2, now + 4000L));
+        queue.add(new DelayTask(3, now + 1000L));
 
         System.out.println("当前时间是：" + LocalDateTime.now());
 
-        // 从延时队列中获取元素
-        for (int i = 0; i < queue.size(); i++) {
-            System.out.println(queue.take() + " ------ " + LocalDateTime.now());       // 将输出 d2 、d1 、d3
-        }
+        new Thread(() -> {
+            // 从延时队列中获取元素
+            while (true) {
+                try {
+                    System.out.println(queue.take() + " ------ " + LocalDateTime.now());       // 将输出 d2 、d1 、d3
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+
+
+        Thread.sleep(5 * 1000);
+        queue.add(new DelayTask(4, System.currentTimeMillis() + 1000L));
+
     }
 
 

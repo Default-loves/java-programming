@@ -6,6 +6,7 @@ import cn.afterturn.easypoi.excel.entity.ExportParams;
 import cn.hutool.cache.CacheUtil;
 import cn.hutool.cache.impl.TimedCache;
 import cn.hutool.core.date.DateUnit;
+import cn.hutool.core.net.NetUtil;
 import cn.hutool.core.thread.ThreadUtil;
 import com.junyi.entity.*;
 import com.junyi.entity.tmp.CouponVM;
@@ -15,16 +16,14 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.junit.jupiter.api.Test;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
+import java.net.*;
 import java.text.ParseException;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 /**
  * User: JY
@@ -46,46 +45,17 @@ public class aaa {
         }
 
     }
-    @Test
-    public void testYkt() throws IOException {
-        ArrayList<VwEntryExitVo> list = new ArrayList<>();
-
-        CouponVM c1 = new CouponVM();
-        c1.setDiscountWay("abc");
-        c1.setEquipmentName("door");
-        CouponVM c2 = new CouponVM();
-        c2.setDiscountWay("efg");
-        c2.setEquipmentName("door");
-        ParkCentralChargeVM charge = new ParkCentralChargeVM();
-        charge.setCouponVMList(new ArrayList<>());
-        charge.getCouponVMList().add(c1);
-        charge.getCouponVMList().add(c2);
-        charge.setAccountCharge(10d);
-        charge.setPayCharge(3d);
-        VwEntryExitVo item = new VwEntryExitVo();
-        item.setParkCentralChargeVMList(new ArrayList<>());
-        item.getParkCentralChargeVMList().add(charge);
-        item.setCarNo("粤A12345");
-
-        list.add(item);
-
-
-        Workbook workbook = ExcelExportUtil.exportExcel( new ExportParams("导出测试", null, "测试"),
-                VwEntryExitVo.class, list);
-        File savefile = new File("D:/excel/");
-        if (!savefile.exists()) {
-            savefile.mkdirs();
-        }
-        FileOutputStream fos = new FileOutputStream("D:/excel/123.xls");
-        workbook.write(fos);
-        fos.close();
-    }
 
     @Test
-    public void test() {
-        String s = System.getProperty("user.dir") + "\\DRPark_SDK";
-        System.out.println(s);
+    public void test() throws SocketException {
+        Book b1 = Book.builder().id(1).name("target").build();
+        Book b2 = Book.builder().id(2).build();
+        List<Book> list = Arrays.asList(b1, b2);
+        Map<Integer, String> map = list.stream().collect(Collectors.toMap(Book::getId, Book::getName));
+        System.out.println(map);
     }
+
+
 
     @Test
     public void testExportExcel() throws Exception {

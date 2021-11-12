@@ -1,3 +1,7 @@
+IDEA的建议设置：https://github.com/judasn/IntelliJ-IDEA-Tutorial/blob/master/settings-recommend-introduce.md
+
+
+
 
 
 ### 快捷键
